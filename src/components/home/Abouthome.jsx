@@ -44,7 +44,7 @@ const AboutHome = () => {
 
               <a
                 href="https://www.youtube.com/watch?v=h9MbznbxlLc"
-                className="icon video-popup !hidden md:!flex"
+                className="icon video-popup !hidden md:flex"
               >
                 <FaPlay />
               </a>

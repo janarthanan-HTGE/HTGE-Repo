@@ -34,8 +34,27 @@ const ServiceHome = () => {
     },
   ];
 
-  const itemsRef = useRef([]);
+  const progressRef = useRef([]);
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
 
+  progressRef.current.forEach((el) => el && observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
+
+  const itemsRef = useRef([]);
+  
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -70,7 +89,7 @@ const ServiceHome = () => {
             >
               <div className="countbox">
                 <h3>
-                  <CountUp start={0} end={24} duration={4} />+
+                  <CountUp start={0} end={24} duration={4} enableScrollSpy scrollSpyOnce/>+
                 </h3>
                 <p>Years of Experience</p>
               </div>
@@ -94,9 +113,9 @@ const ServiceHome = () => {
               </div>
               <div className="progress-items">
                 <div className="progress">
-                  <div
-                    className="progress-value count-bar"
-                    style={{ width: "86%" }}
+                  <div ref={(el) => (progressRef.current[0] = el)}
+                    className="progress-value count-bar w-86"
+                    
                   ></div>
                 </div>
                 <div className="point">
@@ -107,9 +126,8 @@ const ServiceHome = () => {
 
               <div className="progress-items">
                 <div className="progress">
-                  <div
-                    className="progress-value count-bar"
-                    style={{ width: "90%" }}
+                  <div ref={(el) => (progressRef.current[1] = el)}
+                    className="progress-value count-bar w-90"
                   ></div>
                 </div>
                 <div className="point">
@@ -125,7 +143,7 @@ const ServiceHome = () => {
               <motion.div
                 key={service.id}
                 ref={(el) => (itemsRef.current[index + 2] = el)}
-                className="col-xl-4 col-lg-4 col-md-6 col-12"
+                className="col-xl-4 col-lg-4 col-md-6 col-12 fade-up-card"
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
