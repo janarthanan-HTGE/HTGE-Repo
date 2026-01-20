@@ -1,79 +1,62 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import CountUp from "react-countup";
-// eslint-disable-next-line no-unused-vars
-import {motion} from "framer-motion";
+//eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 import { FiPieChart } from "react-icons/fi";
 import { BsCardChecklist } from "react-icons/bs";
 import { BiVector } from "react-icons/bi";
+import useInViewObserver from "../../hooks/useInViewObserver";
 
 const ServiceHome = () => {
-    const services = [
+  const services = [
     {
       id: 2,
       image: "/assets/img/service/01.jpg",
       icon: FiPieChart,
       title: "Digital Data Analysis",
-      desc:
-        "We’ll match you to an entire remote team of incredible freelance talent",
+      desc: "We’ll match you to an entire remote team of incredible freelance talent",
     },
     {
       id: 3,
       image: "/assets/img/service/02.jpg",
       icon: BsCardChecklist,
       title: "QA & Testing",
-      desc:
-        "We’ll match you to an entire remote team of incredible freelance talent",
+      desc: "We’ll match you to an entire remote team of incredible freelance talent",
     },
     {
       id: 4,
       image: "/assets/img/service/03.jpg",
       icon: BiVector,
       title: "UI/UX Design",
-      desc:
-        "We’ll match you to an entire remote team of incredible freelance talent",
+      desc: "We’ll match you to an entire remote team of incredible freelance talent",
     },
   ];
 
   const progressRef = useRef([]);
-useEffect(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.4 }
-  );
-
-  progressRef.current.forEach((el) => el && observer.observe(el));
-
-  return () => observer.disconnect();
-}, []);
-
   const itemsRef = useRef([]);
-  
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
+  const countUpRef = useRef(null);
+  const countUpStarted = useRef(false);
 
-    itemsRef.current.forEach((el) => el && observer.observe(el));
+  useInViewObserver({
+    refs: progressRef,
+    threshold: 0.4,
+    className: "animate",
+  });
 
-    return () => observer.disconnect();
-  }, []);
+  useInViewObserver({
+    refs: itemsRef,
+    threshold: 0.3,
+    className: "in-view",
+    onEnter: () => {
+      if (!countUpStarted.current && countUpRef.current) {
+        countUpRef.current();
+        countUpStarted.current = true;
+      }
+    },
+  });
 
   return (
+
     <section className="service-wrapper service-1 section-bg section-padding">
       <div className="shapes">
         <img className="shape-1" src="/assets/img/shape/shape-1.png" alt="" />
@@ -89,7 +72,13 @@ useEffect(() => {
             >
               <div className="countbox">
                 <h3>
-                  <CountUp start={0} end={24} duration={4} enableScrollSpy scrollSpyOnce/>+
+                  <CountUp start={0} end={24} duration={4}>
+                    {({ countUpRef: ref, start }) => {
+                      countUpRef.current = start;
+                      return <span ref={ref} />;
+                    }}
+                  </CountUp>
+                  +
                 </h3>
                 <p>Years of Experience</p>
               </div>
@@ -150,7 +139,7 @@ useEffect(() => {
                 transition={{
                   duration: 0.9,
                   ease: "easeOut",
-                  delay: index * 0.15, // stagger animation
+                  delay: index * 0.15, 
                 }}
               >
                 <div className="single-service-item">

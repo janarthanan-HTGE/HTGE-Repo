@@ -1,28 +1,16 @@
-import { useEffect, useRef } from "react";
+import {  useRef } from "react";
 import { FaPlay } from "react-icons/fa6";
+import useInViewObserver from "../../hooks/useInViewObserver";
 
 const AboutHome = () => {
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
+  useInViewObserver({
+  refs: [leftRef, rightRef],
+  threshold: 0.3,
+});
 
-    if (leftRef.current) observer.observe(leftRef.current);
-    if (rightRef.current) observer.observe(rightRef.current);
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <section className="about-wrapper about-1 section-padding overflow-hidden">
