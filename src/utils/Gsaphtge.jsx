@@ -1,9 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { SplitText } from "gsap/SplitText";
 
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 /* =====================================================
    MAIN INIT FUNCTION
@@ -48,7 +47,8 @@ function textInvertScroll() {
    SPLIT TEXT ANIMATION
 ===================================================== */
 function splitTextAnimation() {
-  document.querySelectorAll(".split-text").forEach((el) => {
+  document.querySelectorAll(".split-text:not(.swiper-slide *)").forEach((el) => {
+
     const split = new SplitText(el, {
       type: "lines,words,chars",
       linesClass: "split-line",
@@ -113,10 +113,15 @@ function textSplitUp() {
    HERO TEXT PLAY UP
 ===================================================== */
 function heroTextPlayUp() {
-  if ($('.tp-play-up, .tp-play-up-2').length > 0) {
+  const playUpElements = document.querySelectorAll(
+    ".tp-play-up, .tp-play-up-2"
+  );
+
+  if (playUpElements.length > 0) {
+
     const isMobile = window.innerWidth <= 767;
 
-    gsap.utils.toArray(".tp-play-up, .tp-play-up-2").forEach(el => {
+    playUpElements.forEach((el) => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: el,

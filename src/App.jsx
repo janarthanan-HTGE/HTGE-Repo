@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import { initTheme, loader } from "./utils/main-js";
+
 import HeroSection from "./components/Home/herosection";
 import Header from "./components/layout/header/Header";
 import Feature from "./components/home/Feature";
@@ -7,12 +6,10 @@ import AboutHome from "./components/home/Abouthome";
 import ServiceHome from "./components/home/Servicehome";
 import ChooseUsHome from "./components/home/chooseushome";
 import AboutSubHome from "./components/home/Aboutsubhome";
+import BrandSection from "./components/home/Brandsection";
+import TestimonialSection from "./components/home/Testimonialsection";
 
 function App() {
-  useEffect(() => {
-    initTheme();
-    loader();
-  }, []);
 
   return(
     <>
@@ -23,6 +20,8 @@ function App() {
     <ServiceHome/>
     <AboutSubHome/>
     <ChooseUsHome/>
+    <BrandSection/>
+    <TestimonialSection/>
     </>
   )
 }
