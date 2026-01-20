@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import useInViewObserver from "../../hooks/useInViewObserver";
+import { BiWorld } from "react-icons/bi";
+import { PiMedal } from "react-icons/pi";
 
 const ChooseUsHome = () => {
   const leftRef = useRef(null);
@@ -38,6 +40,15 @@ const ChooseUsHome = () => {
 
   return (
     <section className="choose-us-wrapper choose-us-1 section-padding pb-xl-0">
+        <svg width="0" height="0" style={{ position: "absolute" }}>
+            <defs>
+                <linearGradient id="chooseUsIconGradient" gradientTransform="rotate(84)">
+                <stop offset="0%" stopColor="var(--theme)" />
+                <stop offset="100%" stopColor="var(--theme-2)" />
+                </linearGradient>
+            </defs>
+        </svg>
+
       <div className="shape">
         <img src="/assets/img/world.png" alt="" />
       </div>
@@ -79,8 +90,8 @@ const ChooseUsHome = () => {
 
               <div className="icon-box d-flex mt-4 pt-3 text-center text-md-start">
                 <div className="single-icon-box">
-                  <div className="icon">
-                    <i className="flaticon-world"></i>
+                  <div className="iconnic">
+                        <div className="icon"><BiWorld size={40}/></div>
                   </div>
                   <h4>Global Company</h4>
                   <p>
@@ -90,7 +101,7 @@ const ChooseUsHome = () => {
 
                 <div className="single-icon-box">
                   <div className="icon">
-                    <i className="flaticon-medal-1"></i>
+                    <PiMedal size={40}/>
                   </div>
                   <h4>Award Wining</h4>
                   <p>
