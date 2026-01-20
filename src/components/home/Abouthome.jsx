@@ -25,18 +25,23 @@ const AboutHome = () => {
   }, []);
 
   return (
-    <section className="about-wrapper about-1 section-padding">
+    <section className="about-wrapper about-1 section-padding overflow-hidden">
       <div className="container">
-        <div className="row g-5">
+        <div className="row g-4 items-center">
+
+          {/* LEFT */}
           <div
             ref={leftRef}
             className="
-              col-xl-7 col-lg-12 col-md-12 col-12 fade-left
-              pe-0
-              xl:pe-3
+              col-xl-7 col-lg-12 col-md-12 col-12
+              fade-left
+              transform-gpu
+              will-change-transform
+              backface-hidden
             "
           >
-            <div className="about-images">
+            <div className="about-images relative">
+
               <a
                 href="https://www.youtube.com/watch?v=h9MbznbxlLc"
                 className="icon video-popup"
@@ -44,19 +49,34 @@ const AboutHome = () => {
                 <FaPlay />
               </a>
 
-              <div className="image-1">
-                <img src="/assets/img/about/01.jpg" alt="img" />
+              <div className="image-1 aspect-[3/4]">
+                <img
+                  src="/assets/img/about/01.jpg"
+                  alt="img"
+                  className="w-full h-full object-cover block"
+                />
               </div>
 
-              <div className="image-2">
-                <img src="/assets/img/about/02.png" alt="img" />
+              <div className="image-2 aspect-square">
+                <img
+                  src="/assets/img/about/02.png"
+                  alt="img"
+                  className="w-full h-full object-contain block"
+                />
               </div>
             </div>
           </div>
 
+          {/* RIGHT */}
           <div
             ref={rightRef}
-            className="col-xl-5 col-lg-12 col-md-12 col-12 fade-right"
+            className="
+              col-xl-5 col-lg-12 col-md-12 col-12
+              fade-right
+              transform-gpu
+              will-change-transform
+              backface-hidden
+            "
           >
             <div className="about-content mt-4 ms-xxl-4">
               <div className="section-title">
@@ -96,15 +116,21 @@ const AboutHome = () => {
                 </a>
 
                 <div className="contact-us">
-                  <img src="/assets/img/about/03.png" alt="" />
+                  <img
+                    src="/assets/img/about/03.png"
+                    alt=""
+                    className="block"
+                  />
                   <div className="text">
                     <span>Call to ask any question</span>
                     <h4>0123-456-7890</h4>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
+
         </div>
       </div>
     </section>
