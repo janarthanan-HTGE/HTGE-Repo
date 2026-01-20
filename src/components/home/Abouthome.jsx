@@ -44,10 +44,11 @@ const AboutHome = () => {
 
               <a
                 href="https://www.youtube.com/watch?v=h9MbznbxlLc"
-                className="icon video-popup"
+                className="icon video-popup !hidden md:!flex"
               >
                 <FaPlay />
               </a>
+
 
               <div className="image-1 aspect-[3/4]">
                 <img

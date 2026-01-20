@@ -4927,7 +4927,7 @@ input.main-search-input::placeholder {
     overflow: hidden;
 }
 
-.service-1 .service-inner .single-service-item .content .icon i {
+.service-1 .service-inner .single-service-item .content .icon .niki{
     position: relative;
     z-index: 2;
     display: inline-block;
@@ -4956,7 +4956,7 @@ input.main-search-input::placeholder {
     background-size: 100% 1px;
 }
 
-.service-1 .service-inner .single-service-item:hover .icon i {
+.service-1 .service-inner .single-service-item:hover .icon .niki {
     -webkit-animation: iconTranslateX 0.4s forwards;
     animation: iconTranslateX 0.4s forwards;
 }
