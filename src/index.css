@@ -10223,10 +10223,6 @@ p.sticky-label {
     visibility: visible;
 }
 
-.cta-1 {
-    margin-top: -220px;
-}
-
 .cta-1 .cta-inner {
     background-image: url("../../assets/img/cta/cta-bg.png");
     height: 440px;
@@ -10234,6 +10230,7 @@ p.sticky-label {
     position: relative;
     z-index: 1;
     overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.692);
 }
 
 @media (max-width: 991px) {
@@ -10241,8 +10238,10 @@ p.sticky-label {
         height: 100%;
         padding-left: 40px;
         padding-top: 20px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.701);
     }
 }
+
 
 .cta-1 .cta-inner .shape-1 {
     position: absolute;

@@ -8,6 +8,7 @@ import ChooseUsHome from "./components/home/chooseushome";
 import AboutSubHome from "./components/home/Aboutsubhome";
 import BrandSection from "./components/home/Brandsection";
 import TestimonialSection from "./components/home/Testimonialsection";
+import CtaSection from "./components/home/Ctasection";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
     <ChooseUsHome/>
     <BrandSection/>
     <TestimonialSection/>
+    <CtaSection/>
     </>
   )
 }
