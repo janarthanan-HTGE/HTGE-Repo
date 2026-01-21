@@ -4,7 +4,7 @@ const AboutSubHome = () => {
     return (
         <section className="about-wrapper about-2 mx-xl-5 section-padding pt-0">
         <div
-            className="bg-image bg-cover"
+            className="bg-image bg-cover "
             style={{ backgroundImage: "url(assets/img/about/01-bg.png)" }}
         ></div>
 
@@ -34,19 +34,19 @@ const AboutSubHome = () => {
                 </a>
 
                 <div className="contact-us d-flex">
-                <a href="">
-                    <RxEnvelopeClosed/>
-                </a>
-
-                <div className="text text-start">
-                    <span>Our Gmail</span>
-                    <h4>
-                    <a href="mailto:info@htge.org" className="text-white">
-                        info@htge.org
+                    <a href="">
+                        <RxEnvelopeClosed/>
                     </a>
 
-                    </h4>
-                </div>
+                    <div className="text text-start">
+                        <span>Our Gmail</span>
+                        <h4>
+                        <a href="mailto:info@htge.org" className="text-white">
+                            info@htge.org
+                        </a>
+
+                        </h4>
+                    </div>
                 </div>
             </div>
             </div>

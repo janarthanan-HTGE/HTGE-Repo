@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-
+import { FaStar,FaLongArrowAltRight,FaLongArrowAltLeft } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -42,7 +42,7 @@ const TestimonialSection = () => {
         <img className="shape-2" src="/assets/img/shape/shape-14.png" alt="" />
       </div>
 
-      <div className="container">
+      <div className="container ">
         <div className="section-title text-center">
           <div className="sub-title">
             <span>OUR TESTIMONIAL</span>
@@ -61,7 +61,7 @@ const TestimonialSection = () => {
             loop={true}
             speed={800}
             autoplay={{
-              delay: 4000,              // auto slide every 4s
+              delay: 4000,              
               disableOnInteraction: false,
             }}
             navigation={{
@@ -77,11 +77,13 @@ const TestimonialSection = () => {
 
                   <div className="content">
                     <div className="star text-center text-md-start">
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
-                      <i className="fas fa-star"></i>
+                      <div className="starhor">
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />
+                        <FaStar />  
+                      </div>
                     </div>
 
                     <p>{item.text}</p>
@@ -100,10 +102,10 @@ const TestimonialSection = () => {
             {/* navigation buttons */}
             <div className="array-button">
               <button className="array-prev">
-                <i className="fas fa-long-arrow-left"></i>
+                <div className="ml-4"><FaLongArrowAltLeft /></div>
               </button>
               <button className="array-next">
-                <i className="fas fa-long-arrow-right"></i>
+                <div className="ml-4"><FaLongArrowAltRight /></div>
               </button>
             </div>
           </Swiper>

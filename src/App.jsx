@@ -1,6 +1,7 @@
 
 import HeroSection from "./components/Home/herosection";
-import Header from "./components/layout/header/Header";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import Feature from "./components/home/Feature";
 import AboutHome from "./components/home/Abouthome";
 import ServiceHome from "./components/home/Servicehome";
@@ -24,6 +25,7 @@ function App() {
     <BrandSection/>
     <TestimonialSection/>
     <CtaSection/>
+    <Footer/>
     </>
   )
 }

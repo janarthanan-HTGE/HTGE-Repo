@@ -1,5 +1,6 @@
 import {  useRef } from "react";
-import { FaPlay } from "react-icons/fa6";
+import { FaPlay} from "react-icons/fa6";
+import { FaCheckCircle } from "react-icons/fa";
 import useInViewObserver from "../../hooks/useInViewObserver";
 
 const AboutHome = () => {
@@ -86,15 +87,15 @@ const AboutHome = () => {
 
               <ul>
                 <li>
-                  <i className="fas fa-check-circle"></i>
+                  <div className="Circleab"><FaCheckCircle /></div>
                   Website &amp; Mobile application design &amp; Development
                 </li>
                 <li>
-                  <i className="fas fa-check-circle"></i>
+                  <div className="Circleab"><FaCheckCircle /></div>
                   Dramatically re-engineer value added IT systems via mission
                 </li>
                 <li>
-                  <i className="fas fa-check-circle"></i>
+                  <div className="Circleab"><FaCheckCircle /></div>
                   Professional User Experince &amp; Interface researching
                 </li>
               </ul>

@@ -6,7 +6,9 @@ import {
   FaLocationDot,
   FaEnvelope,
   FaPhone,
+  FaXTwitter
 } from "react-icons/fa6";
+import { FaInstagram ,FaYoutube,FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
 
@@ -92,10 +94,7 @@ const Header = () => {
                     <Link to="/services" onClick={closeMenu}>Services</Link>
                   </li>
                   <li>
-                    <Link to="/team" onClick={closeMenu}>Team</Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" onClick={closeMenu}>Contact</Link>
+                    <Link to="/contact" onClick={closeMenu}>Careers</Link>
                   </li>
                 </ul>
               </div>
@@ -154,22 +153,22 @@ const Header = () => {
                     className="theme-btn black-btn"
                     onClick={closeMenu}
                   >
-                    Contact Us
+                    Careers
                   </Link>
                 </div>
 
                 <div className="social-icon d-flex align-items-center">
                   <a href="#">
-                    <i className="fab fa-facebook-f"></i>
+                    <FaInstagram />
                   </a>
                   <a href="#">
-                    <i className="fab fa-twitter"></i>
+                    <FaXTwitter />
                   </a>
                   <a href="#">
-                    <i className="fab fa-youtube"></i>
+                    <FaYoutube />
                   </a>
                   <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
+                    <FaLinkedin />
                   </a>
                 </div>
               </div>
@@ -217,10 +216,7 @@ const Header = () => {
                             <Link to="/services">Services</Link>
                           </li>
                           <li>
-                            <Link to="/team">Team</Link>
-                          </li>
-                          <li>
-                            <Link to="/contact">Contact</Link>
+                            <Link to="/contact">Careers</Link>
                           </li>
                         </ul>
                       </nav>

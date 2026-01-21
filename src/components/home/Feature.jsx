@@ -3,27 +3,40 @@ import {motion} from "framer-motion";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { PiAppStoreLogoBold,PiChartLineUp } from "react-icons/pi";
 import { MdOutlineDesignServices } from "react-icons/md";
+import {FaCheckCircle} from "react-icons/fa";
 
 const features = [
   {
     icon: LiaLaptopCodeSolid,
     title: "Custom Software Development", 
     delay: 0.2,
+    description:"At Zotech, our mission is to empower businesses.", 
+    subone:"Career progression",
+    subtwo:"Career progression",
   },
   {
     icon: PiAppStoreLogoBold,
     title: "Web and Mobile Development",
-    delay: 0.4,
+    delay: 0.4, 
+    description:"At Zotech, our mission is to empower businesses.",
+    subone:"Career progression",
+    subtwo:"Career progression",
   },
   {
     icon: PiChartLineUp,
     title: "Business and IT Consultancy",
     delay: 0.6,
+    description:"At Zotech, our mission is to empower businesses.",
+    subone:"Career progression",
+    subtwo:"Career progression",
   },
   {
     icon: MdOutlineDesignServices,
     title: "Advance Tool and Design",
     delay: 0.8,
+    description:"At Zotech, our mission is to empower businesses.",
+    subone:"Career progression",
+    subtwo:"Career progression",
   },
 ];
 
@@ -58,17 +71,17 @@ const Feature = () => {
                 </h4>
 
                 <p>
-                  At Zotech, our mission is to empower businesses.
+                  {item.description}
                 </p>
 
                 <ul>
                   <li>
-                    <i className="fas fa-check-circle"></i>
-                    Career progression
+                    <div className="icro"><FaCheckCircle /></div>
+                    {item.subone}
                   </li>
                   <li>
-                    <i className="fas fa-check-circle"></i>
-                    Career progression
+                    <div className="icro"><FaCheckCircle /></div>
+                    {item.subtwo}
                   </li>
                 </ul>
               </div>
