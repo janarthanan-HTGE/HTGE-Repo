@@ -109,11 +109,10 @@ const NavBar = () => {
                     <div className="offcanvas__contact-text">
                       <a
                         className="text-black"
-                        href="https://maps.google.com"
-                        target="_blank"
-                        rel="noreferrer"
+                        href="https://share.google/nIli1kelOepn2i9RD"
+                        
                       >
-                        Main Street, Melbourne, Australia
+                        TIDEL NEO, Tamil Nadu - 605111.
                       </a>
                     </div>
                   </li>
@@ -125,9 +124,9 @@ const NavBar = () => {
                     <div className="offcanvas__contact-text">
                       <a
                         className="text-black"
-                        href="mailto:info@example.com"
+                        href="mailto:info@htge.org"
                       >
-                        info@example.com
+                        info@htge.org
                       </a>
                     </div>
                   </li>
@@ -139,9 +138,9 @@ const NavBar = () => {
                     <div className="offcanvas__contact-text">
                       <a
                         className="text-black"
-                        href="tel:+11002345909"
+                        href="tel:+91 7092909192"
                       >
-                        +11002345909
+                        +91 70929 09192
                       </a>
                     </div>
                   </li>
