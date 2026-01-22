@@ -5,7 +5,7 @@ const ErrorPage = () => {
     return(
     <>
       <NavBar/>
-      <section className="error-section mb-5 mt-5 fix">
+      <section className="error-section mb-5 fix">
         <div className="container">
           <div className="error-content text-center text-error">
             <img src="/public/assets/img/coding.png" alt="coding" />

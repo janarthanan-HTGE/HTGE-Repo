@@ -2244,8 +2244,9 @@ p {
 .error-content img {
   display: block;
   margin: 0 auto;
+  width:auto;
+  height:300px;
 }
-
 
 .mean-container a.meanmenu-reveal {
     display: none;
