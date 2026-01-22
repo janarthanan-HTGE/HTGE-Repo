@@ -5434,8 +5434,8 @@ p {
     width: 100%;
     height: 0%;
     position: absolute;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 3, 37, 0.56)), to(rgba(0, 3, 37, 0.56))), url("../../assets/img/why-choose/05.png");
-    background: linear-gradient(rgba(0, 3, 37, 0.56), rgba(0, 3, 37, 0.56)), url("../../assets/img/why-choose/05.png");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 3, 37, 0.56)), to(rgba(0, 3, 37, 0.56))), url("/assets/img/why-choose/05.png");
+    background: linear-gradient(rgba(0, 3, 37, 0.56), rgba(0, 3, 37, 0.56)), url("/assets/img/why-choose/05.png");
     -webkit-filter: grayscale(50%);
     filter: grayscale(50%);
     transition: 0.4s;
@@ -7734,20 +7734,7 @@ p {
     border: none;
 }
 
-.blog-wrapper .single-blog-post.quote-post .post-content::before,
-.blog-wrapper .single-blog-post.format-quote .post-content::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    background-image: url(../../assets/img/quotepost.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 .blog-wrapper .single-blog-post.quote-post .quote-content,
 .blog-wrapper .single-blog-post.format-quote .quote-content {
@@ -10068,7 +10055,7 @@ p.sticky-label {
 }
 
 .cta-1 .cta-inner {
-    background-image: url("../../assets/img/cta/cta-bg.png");
+    background-image: url("/assets/img/cta/cta-bg.png");
     height: 440px;
     padding-left: 92px;
     position: relative;

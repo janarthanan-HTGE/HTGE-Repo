@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import useInViewObserver from "../../hooks/useInViewObserver";
-import { BiWorld } from "react-icons/bi";
-import { PiMedal } from "react-icons/pi";
+
 
 const ChooseUsHome = () => {
   const leftRef = useRef(null);
