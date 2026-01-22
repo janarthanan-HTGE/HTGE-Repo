@@ -1,42 +1,43 @@
 // eslint-disable-next-line no-unused-vars
 import {motion} from "framer-motion";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
-import { PiAppStoreLogoBold,PiChartLineUp } from "react-icons/pi";
+import { PiCertificateLight } from "react-icons/pi";
 import { MdOutlineDesignServices } from "react-icons/md";
 import {FaCheckCircle} from "react-icons/fa";
+import { TbSpeakerphone } from "react-icons/tb";
 
 const features = [
   {
-    icon: LiaLaptopCodeSolid,
-    title: "Custom Software Development", 
+    icon: PiCertificateLight,
+    title: "Hi-Tech Institution", 
     delay: 0.2,
-    description:"At Zotech, our mission is to empower businesses.", 
-    subone:"Career progression",
-    subtwo:"Career progression",
+    description:"Practical, industry-focused IT training programs", 
+    subone:"IT Courses",
+    subtwo:"Hands-on",
   },
   {
-    icon: PiAppStoreLogoBold,
-    title: "Web and Mobile Development",
+    icon: LiaLaptopCodeSolid,
+    title: " Hi-Tech Solution",
     delay: 0.4, 
-    description:"At Zotech, our mission is to empower businesses.",
-    subone:"Career progression",
-    subtwo:"Career progression",
+    description:"Reliable IT infrastructure and cloud support services",
+    subone:"IT & Cloud Support",
+    subtwo:"24×7 Reliability",
   },
   {
-    icon: PiChartLineUp,
-    title: "Business and IT Consultancy",
+    icon: TbSpeakerphone,
+    title: "Hi-Tech Virtual Promotion",
     delay: 0.6,
-    description:"At Zotech, our mission is to empower businesses.",
-    subone:"Career progression",
-    subtwo:"Career progression",
+    description:"Result-driven digital marketing solutions",
+    subone:"Marketing Services",
+    subtwo:"Custom Strategies",
   },
   {
     icon: MdOutlineDesignServices,
-    title: "Advance Tool and Design",
+    title: "Hi-Tech career builder",
     delay: 0.8,
-    description:"At Zotech, our mission is to empower businesses.",
-    subone:"Career progression",
-    subtwo:"Career progression",
+    description:"Training and placement support for job seekers",
+    subone:"Career Support",
+    subtwo:"Fresher Focus",
   },
 ];
 

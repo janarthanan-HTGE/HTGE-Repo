@@ -2,9 +2,9 @@ import { useRef } from "react";
 import CountUp from "react-countup";
 //eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
-import { FiPieChart } from "react-icons/fi";
-import { BsCardChecklist } from "react-icons/bs";
-import { BiVector } from "react-icons/bi";
+import { FaCode } from "react-icons/fa";
+import { MdAutoGraph } from "react-icons/md";
+import { PiCertificateLight } from "react-icons/pi";
 import useInViewObserver from "../../hooks/useInViewObserver";
 
 const ServiceHome = () => {
@@ -12,23 +12,23 @@ const ServiceHome = () => {
     {
       id: 2,
       image: "/assets/img/service/01.jpg",
-      icon: FiPieChart,
-      title: "Digital Data Analysis",
-      desc: "We’ll match you to an entire remote team of incredible freelance talent",
+      icon: FaCode,
+      title: "Software Development",
+      desc: "Scalable and secure web, mobile, and enterprise software solutions.",
     },
     {
       id: 3,
       image: "/assets/img/service/02.jpg",
-      icon: BsCardChecklist,
-      title: "QA & Testing",
-      desc: "We’ll match you to an entire remote team of incredible freelance talent",
+      icon: MdAutoGraph,
+      title: "Digital Marketing",
+      desc: "Boost your online presence with SEO, social media, PPC, and digital branding services.",
     },
     {
       id: 4,
       image: "/assets/img/service/03.jpg",
-      icon: BiVector,
-      title: "UI/UX Design",
-      desc: "We’ll match you to an entire remote team of incredible freelance talent",
+      icon: PiCertificateLight,
+      title: "Internships & Training",
+      desc: "Gain real-world skills through job-oriented IT internships and professional training programs.",
     },
   ];
 
@@ -59,8 +59,8 @@ const ServiceHome = () => {
 
     <section className="service-wrapper service-1 section-bg section-padding">
       <div className="shapes">
-        <img className="shape-1" src="/assets/img/shape/shape-1.png" alt="" />
-        <img className="shape-2" src="/assets/img/world.png" alt="" />
+        <img className="shape-1" src="/assets/img/shape/shape-1.png" alt="DNA" />
+        <img className="shape-2" src="/assets/img/world.png" alt="world" />
       </div>
 
       <div className="container">
@@ -72,7 +72,7 @@ const ServiceHome = () => {
             >
               <div className="countbox">
                 <h3>
-                  <CountUp start={0} end={24} duration={4}>
+                  <CountUp start={0} end={7} duration={4}>
                     {({ countUpRef: ref, start }) => {
                       countUpRef.current = start;
                       return <span ref={ref} />;
@@ -85,7 +85,7 @@ const ServiceHome = () => {
 
               <div className="section-title mt-4">
                 <h2 className="split-text left">
-                  We run all kinds of IT <br /> services that vow your success
+                  We Run End-to-End IT <br />Services That Drive Your Business Success
                 </h2>
               </div>
             </div>
@@ -96,8 +96,7 @@ const ServiceHome = () => {
             >
               <div className="title">
                 <h3>
-                  Accelerate innovation with world-class tech teams We’ll match
-                  you to an entire remote technology
+                  Accelerate Innovation With World-Class Technology Teams
                 </h3>
               </div>
               <div className="progress-items">
@@ -108,8 +107,8 @@ const ServiceHome = () => {
                   ></div>
                 </div>
                 <div className="point">
-                  <p>IT Management</p>
-                  <span>86%</span>
+                  <p>IT Solutions & Digital Services</p>
+                  <span>90%</span>
                 </div>
               </div>
 
@@ -120,8 +119,8 @@ const ServiceHome = () => {
                   ></div>
                 </div>
                 <div className="point">
-                  <p>Data Security</p>
-                  <span>90%</span>
+                  <p>IT Training & Career Development Services</p>
+                  <span>95%</span>
                 </div>
               </div>
             </div>
@@ -147,12 +146,12 @@ const ServiceHome = () => {
                     <img
                       className="shape-3"
                       src="/assets/img/service/shape-1.png"
-                      alt=""
+                      alt="curve-right"
                     />
                     <img
                       className="shape-4"
                       src="/assets/img/service/shape-2.png"
-                      alt=""
+                      alt="curve-left"
                     />
                   </div>
 

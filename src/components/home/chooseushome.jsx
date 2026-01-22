@@ -33,8 +33,8 @@ const ChooseUsHome = () => {
       if (countStarted.current) return;
       countStarted.current = true;
 
-      startCount(count98Ref.current, 98);
-      startCount(count6795Ref.current, 6795);
+      startCount(count98Ref.current, 90);
+      startCount(count6795Ref.current, 2658);
     },
   });
 
@@ -50,7 +50,7 @@ const ChooseUsHome = () => {
         </svg>
 
       <div className="shape">
-        <img src="/assets/img/world.png" alt="" />
+        <img src="/assets/img/world.png" alt="world" />
       </div>
 
       <div className="container">
@@ -60,9 +60,9 @@ const ChooseUsHome = () => {
               ref={leftRef}
               className="choose-us-images fade-left"
             >
-              <img src="/assets/img/why-choose/01.png" alt="" />
+              <img src="/assets/img/why-choose/01.png" alt="man" />
               <div className="shape-img">
-                <img src="/assets/img/shape/shape-2.png" alt="" />
+                <img src="/assets/img/shape/shape-2.png" alt="style-circle" />
               </div>
             </div>
           </div>
@@ -77,18 +77,15 @@ const ChooseUsHome = () => {
                   <span>WHY CHOOSE US</span>
                 </div>
                 <h2 className="split-text right">
-                  We provide truly prominent IT solutions for your success
+                  We Deliver Reliable IT Solutions for Your Business Success
                 </h2>
               </div>
 
-              <p className="mt-4 pe-xl-5 me-xl-3 text-center text-md-start">
-                HTGE is the partner of choice for many of the world’s leading
-                enterprises, SMEs and technology challengers. We help businesses
-                elevate their value through custom software development, product
-                design, QA and consultancy services.
+              <p className="mt-4 pe-xl-5 me-xl-3 text-justify">
+                HTGE Technologies Pvt Ltd is a trusted IT partner for startups, SMEs, and enterprises worldwide. We support business growth through custom software development, digital marketing, managed IT services, and career-focused training by delivering secure, scalable, and cost-effective technology solutions. Our expert team follows industry best practices to provide tailored solutions with quality, transparency, and timely delivery. We focus on innovation, long-term partnerships, and measurable results to ensure sustainable business success.
               </p>
 
-              <div className="icon-box d-flex mt-4 pt-3 text-center text-md-start">
+              {/* <div className="icon-box d-flex mt-4 pt-3 text-center text-md-start">
                 <div className="single-icon-box">
                   <div className="iconnic">
                         <div className="icon"><BiWorld size={40}/></div>
@@ -108,7 +105,7 @@ const ChooseUsHome = () => {
                     Our great team of more than to 1400 software experts member.
                   </p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="count-box">
                 <div className="single-count">

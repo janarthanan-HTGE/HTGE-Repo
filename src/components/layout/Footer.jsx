@@ -17,18 +17,16 @@ const FooterSec = () => {
                         <div className="widget-head">
                         <a href="index.html">
                             <img
-                            src="https://htge.org/wp-content/uploads/2025/03/HTGE-Logo.jpg"
-                            alt="logo-img"
-                            width="80"
+                            src="/public/assets/img/logo/black-logo.png"
+                            alt="logo"
+                            width="100"
                             />
                         </a>
                         </div>
 
                         <div className="footer-content">
                         <p>
-                            Mauris ut enim sit amet lacus ornare <br />
-                            ullamcorper. Praesent placerat neque eu <br />
-                            purus rhoncus
+                            Become our client and experience expert IT services that drive growth
                         </p>
 
                         <div className="social-icon d-flex align-items-center">
@@ -91,33 +89,28 @@ const FooterSec = () => {
                         <li>
                             <a href="contact.html">
                             <FaCircle size={4} />
-                            Blockchain technology
+                            Software Development
                             </a>
                         </li>
                         <li>
                             <a href="contact.html">
                             <FaCircle size={4} />
-                            Advanced Technology
+                            Website Development
                             </a>
                         </li>
                         <li>
                             <a href="contact.html">
                             <FaCircle size={4} />
-                            Infrastructure Technology
+                            Mobile App Development
                             </a>
                         </li>
                         <li>
                             <a href="contact.html">
                             <FaCircle size={4} />
-                            Data Management
+                            IT Services & Support
                             </a>
                         </li>
-                        <li>
-                            <a href="contact.html">
-                            <FaCircle size={4} />
-                            Security Management
-                            </a>
-                        </li>
+                       
                         </ul>
                     </div>
                     </div>
@@ -133,7 +126,7 @@ const FooterSec = () => {
                         <div className="footer-content">
                         <div className="contact-info-area">
                             <div className="contact">
-                            <a href="#">
+                            <a href="mailto:info@htge.org">
                                 <PiEnvelopeSimpleLight />
                             </a>
                             <div className="contact-infu">
@@ -143,24 +136,24 @@ const FooterSec = () => {
                             </div>
 
                             <div className="contact">
-                            <a href="#">
+                            <a href="https://share.google/nIli1kelOepn2i9RD">
                                 <GrLocation />
                             </a>
                             <div className="contact-infu">
                             <span>Address:</span>
-                                <h5 className="text-lowercase">
-                                3770 Hidden Meadow Drive Venturia, ND 58489
+                                <h5>
+                                TIDEL NEO, <br />Thiruchitrabalam - Koot Road, <br />Tamil Nadu - 605111.
                                 </h5>
                             </div>
                             </div>
 
                             <div className="contact">
-                            <a href="#">
+                            <a href="tel:+917092909192">
                                 <BsTelephone />
                             </a>
                             <div className="contact-infu">
                                 <span>Phone:</span>
-                                <h5>(704) 555-0127</h5>
+                                <h5>+91 70929 09192</h5>
                             </div>
                             </div>
                         </div>

@@ -16,16 +16,14 @@ const AboutSubHome = () => {
                 </div>
 
                 <h2 className="text-white split-text right">
-                Technological Applications <br />
-                Play a Role in Improving Our <br />
-                Community
+                Technology-Driven IT Solutions for <br /> Business & Community Growth
                 </h2>
             </div>
 
-            <p className="text-center">
-                In today's competitive business, the demand for efficient and cost-
-                <br />
-                effective IT solutions has never been more critical.
+            <p className="text-justify">
+                In today’s competitive digital world, HTGE Technologies Pvt Ltd delivers efficient, secure, and <br/> 
+                cost-effective IT solutions that help businesses grow, innovate, and create long-term value through technology.
+
             </p>
 
             <div className="infu text-center d-flex align-items-center justify-content-center">

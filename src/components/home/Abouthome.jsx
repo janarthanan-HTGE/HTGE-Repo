@@ -42,7 +42,7 @@ const AboutHome = () => {
               <div className="image-1 aspect-[3/4]">
                 <img
                   src="/assets/img/about/01.jpg"
-                  alt="img"
+                  alt="Clientone"
                   className="w-full h-full object-cover block"
                 />
               </div>
@@ -50,7 +50,7 @@ const AboutHome = () => {
               <div className="image-2 aspect-square">
                 <img
                   src="/assets/img/about/02.png"
-                  alt="img"
+                  alt="ClientTwo"
                   className="w-full h-full object-contain block"
                 />
               </div>
@@ -75,14 +75,12 @@ const AboutHome = () => {
                 </div>
 
                 <h2 className="split-text right">
-                  Highly Tailored Technology, Develop <br /> &amp; Support Services.
+                  Highly Tailored Technology, Development &amp; Support Services
                 </h2>
               </div>
 
               <p>
-                Accelerate innovation with world-class tech teams We’ll match
-                you to an entire remote team of incredible freelance talent for
-                all your software development needs.
+                Accelerate digital transformation with HTGE Technologies Pvt Ltd, an Indian-based Information Technology organization established in March 2017. Originating as a learning academy in Pondicherry, HTGE has evolved into a multi-vertical enterprise delivering reliable, scalable, and future-ready IT solutions for businesses worldwide.
               </p>
 
               <ul>
@@ -92,11 +90,11 @@ const AboutHome = () => {
                 </li>
                 <li>
                   <div className="Circleab"><FaCheckCircle /></div>
-                  Dramatically re-engineer value added IT systems via mission
+                  Value-Driven IT Systems & Digital Transformation
                 </li>
                 <li>
                   <div className="Circleab"><FaCheckCircle /></div>
-                  Professional User Experince &amp; Interface researching
+                  IT Training, Career Development & Skill Enhancement
                 </li>
               </ul>
 
@@ -106,14 +104,9 @@ const AboutHome = () => {
                 </a>
 
                 <div className="contact-us">
-                  <img
-                    src="/assets/img/about/03.png"
-                    alt=""
-                    className="block"
-                  />
                   <div className="text">
                     <span>Call to ask any question</span>
-                    <h4>0123-456-7890</h4>
+                    <h4>+91 70929 09192</h4>
                   </div>
                 </div>
               </div>

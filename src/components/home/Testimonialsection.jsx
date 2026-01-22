@@ -7,29 +7,29 @@ import "swiper/css/navigation";
 const testimonials = [
   {
     id: 1,
-    image: "/assets/img/testimonial/01.png",
-    name: "William Jekson",
-    role: "Product Manager",
+    image: "/assets/img/testimonial/01.jpg",
+    name: "Shiva R",
+    role: "Intern",
     text:
-      "I believe in lifelong learning and they are a great place to learn from experts. I have learned a lot and recommend it",
+      "Supportive mentors, practical learning, well-structured course, and real-world results.",
     paddingClass: "pt-4 pt-xxl-5",
   },
   {
     id: 2,
-    image: "/assets/img/testimonial/01.png",
-    name: "William Jekson",
-    role: "Product Manager",
+    image: "/assets/img/testimonial/01.jpg",
+    name: "Hair Expo",
+    role: "Support",
     text:
-      "I believe in lifelong learning and they are a great place to learn from experts. I have learned a lot and recommend it",
+      "Reliable cloud support with quick response, strong expertise, and smooth issue resolution.",
     paddingClass: "pt-4 pt-lg-5",
   },
   {
     id: 3,
-    image: "/assets/img/testimonial/01.png",
-    name: "William Jekson",
-    role: "Product Manager",
+    image: "/assets/img/testimonial/01.jpg",
+    name: "SSK",
+    role: "Digital Marketing",
     text:
-      "I believe in lifelong learning and they are a great place to learn from experts. I have learned a lot and recommend it",
+      "Excellent digital marketing for interior kitchens with great leads and strong online visibility.",
     paddingClass: "pt-4 pt-lg-5",
   },
 ];
@@ -38,8 +38,8 @@ const TestimonialSection = () => {
   return (
     <section className="testimonial-wrapper testimonial-1 section-padding pb-0">
       <div className="shape">
-        <img className="shape-1" src="/assets/img/shape/shape-13.png" alt="" />
-        <img className="shape-2" src="/assets/img/shape/shape-14.png" alt="" />
+        <img className="shape-1" src="/assets/img/shape/shape-13.png" alt="designone" />
+        <img className="shape-2" src="/assets/img/shape/shape-14.png" alt="designtwo" />
       </div>
 
       <div className="container ">

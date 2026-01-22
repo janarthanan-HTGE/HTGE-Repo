@@ -2401,7 +2401,7 @@ p {
 
 @media (max-width: 1199px) {
     .hero-1 .hero-content h1 {
-        font-size: 45px;
+        font-size: 35px;
         line-height: 40px;
     }
 
@@ -3553,6 +3553,7 @@ p {
 
 .about-1 .about-content p {
     padding-top: 20px;
+    text-align: justify;
 }
 
 .about-1 .about-content ul {

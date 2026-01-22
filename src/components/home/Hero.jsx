@@ -21,7 +21,7 @@ const HeroSection = () => {
         <img
           className="shape-1"
           src="/assets/img/world.png"
-          alt=""
+          alt="world"
         />
       </div>
 
@@ -39,12 +39,12 @@ const HeroSection = () => {
           <div className="col-xl-6 col-lg-6 col-md-12 col-12">
             <div className="hero-content pe-xl-3 text-lg-start text-center tp-play-up">
               <h1 className="fade-up">
-                Empowering Ideas with Technological Excellence
+                Welcome To HTGE Technologies Pvt Ltd
               </h1>
+              
 
               <p className="parat">
-                In today's competitive business, the demand for efficient and
-                cost-effective IT solutions has never been more critical.
+                Since 2017, we deliver customer-focused services worldwide across digital marketing, IT solutions & infrastructure support, and career development through our four specialized verticals.
               </p>
 
               <div className="hero-button mt-4 tp-play-up">
@@ -55,16 +55,16 @@ const HeroSection = () => {
 
               <div className="feedback d-flex mt-xl-5 justify-content-lg-start justify-content-center">
                 <div className="infu">
-                  <img src="/assets/img/google.png" alt="" />
+                  <img src="/assets/img/google.png" alt="google" />
                   <p>
-                    <span>4.8</span> From&nbsp;799+&nbsp;reviews
+                    <span>4.9</span> From&nbsp;70+&nbsp;reviews
                   </p>
                 </div>
 
                 <div className="infu">
-                  <img src="/assets/img/rating.png" alt="" />
+                  <img src="/assets/img/rating.png" alt="rating" />
                   <p>
-                    <span>4.9</span> From&nbsp;200+&nbsp;reviews
+                    <span>200+</span> From&nbsp;200+&nbsp;reviews
                   </p>
                 </div>
               </div>
@@ -76,7 +76,7 @@ const HeroSection = () => {
             <div className="hero-image mx-lg-0 mx-auto md:-mb-5">
               <img
                 src="/assets/img/hero/hero-1.png"
-                alt=""
+                alt="man"
               />
             </div>
           </div>

@@ -9,12 +9,12 @@ const CtaSection = () => {
                 <img
                 className="shape-1"
                 src="assets/img/cta/cta-shape-1.png"
-                alt=""
+                alt="shape"
                 />
                 <img
                 className="shape-2"
                 src="assets/img/world.png"
-                alt=""
+                alt="world"
                 />
             </div>
             <div className="row align-items-center">
@@ -35,7 +35,7 @@ const CtaSection = () => {
                 <div className="images">
                     <img
                     src="assets/img/cta/cta-1.png"
-                    alt=""
+                    alt="design"
                     />
                 </div>
                 </div>
