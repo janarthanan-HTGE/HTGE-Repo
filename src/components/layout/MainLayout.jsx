@@ -5,35 +5,25 @@ import FooterSec from "./Footer";
 import Preloader from "./Loader";
 
 const Layout = () => {
-  const [loaded, setLoaded] = useState(false);
-  const [show, setShow] = useState(true);
+   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    const startExit = setTimeout(() => {
-      setLoaded(true); // add `.loaded`
-    }, 600);
+    const timer = setTimeout(() => {
+      setLoaded(true)
+    }, 100)
 
-    const removeLoader = setTimeout(() => {
-      setShow(false); // unmount after animation
-    }, 1800);
-
-    return () => {
-      clearTimeout(startExit);
-      clearTimeout(removeLoader);
-    };
-  }, []);
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <>
-      {show && <Preloader loaded={loaded} />}
-
-      {!show && (
+      <Preloader loaded={loaded} />
         <>
           <NavBar />
           <Outlet />
           <FooterSec />
         </>
-      )}
+
     </>
   );
 };
