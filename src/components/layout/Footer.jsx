@@ -17,7 +17,7 @@ const FooterSec = () => {
                         <div className="widget-head">
                         <a href="index.html">
                             <img
-                            src="/public/assets/img/logo/black-logo.png"
+                            src="/assets/img/logo/black-logo.png"
                             alt="logo"
                             width="100"
                             />

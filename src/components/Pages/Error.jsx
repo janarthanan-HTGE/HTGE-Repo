@@ -8,7 +8,7 @@ const ErrorPage = () => {
       <section className="error-section mb-5 fix">
         <div className="container">
           <div className="error-content text-center text-error">
-            <img src="/public/assets/img/coding.png" alt="coding" />
+            <img src="/assets/img/coding.png" alt="coding" />
             <h5 className="fade-up text-error">
               Website loading… developers arguing over semicolons
             </h5>
