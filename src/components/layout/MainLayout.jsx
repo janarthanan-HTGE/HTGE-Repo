@@ -5,25 +5,30 @@ import FooterSec from "./Footer";
 import Preloader from "./Loader";
 
 const Layout = () => {
-   const [loaded, setLoaded] = useState(false)
+  const [loaded, setLoaded] = useState(false);
+  const [showPreloader, setShowPreloader] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoaded(true)
-    }, 100)
+    const start = setTimeout(() => {
+      setLoaded(true); 
 
-    return () => clearTimeout(timer)
-  }, [])
+      const end = setTimeout(() => {
+        setShowPreloader(false); 
+      }, 1200); 
+
+      return () => clearTimeout(end);
+    }, 100);
+
+    return () => clearTimeout(start);
+  }, []);
 
   return (
     <>
-      <Preloader loaded={loaded} />
-        <>
-          <NavBar />
-          <Outlet />
-          <FooterSec />
-        </>
+      {showPreloader && <Preloader loaded={loaded} />}
 
+      <NavBar />
+      <Outlet />
+      <FooterSec />
     </>
   );
 };

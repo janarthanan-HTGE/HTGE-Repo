@@ -59,13 +59,12 @@ const NavBar = () => {
 
   return (
     <>
-      {/* ================= Offcanvas Area ================= */}
       <div className="fix-area">
         <div className="offcanvas__info">
           <div className="offcanvas__wrapper">
             <div className="offcanvas__content">
 
-              <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+              <div className="offcanvas__top mb-5 d-flex justify-content-between align-items-center header-logo">
                 <div className="offcanvas__logo">
                   <Link to="/">
                     <img
@@ -189,9 +188,9 @@ const NavBar = () => {
           <div className="container">
             <div className="mega-menu-wrapper">
               <div className="header-main">
-                <div className="header-left">
+                <div className="header-left header-logo">
                   <div className="logo">
-                    <Link to="/" className="header-logo">
+                    <Link to="/">
                       <img
                         src="/assets/img/logo/black-logo.png"
                         alt="logo-img"
