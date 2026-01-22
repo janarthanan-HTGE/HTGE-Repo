@@ -11124,3 +11124,7 @@ p.sticky-label {
 .footer-bottom .footer-bottom-wrapper p {
     color: var(--white-3);
 }
+
+.text-error{
+    margin-top:50px
+}
