@@ -380,20 +380,7 @@ function initImagePopup() {
   });
 }
 
-/* =====================================================
-   PAGE LOADER
-===================================================== */
-function initPageLoader() {
-  const loader = document.querySelector(".preloader");
-  if (!loader) return;
 
-  window.addEventListener("load", () => {
-    loader.classList.add("loaded");
-    setTimeout(() => {
-      loader.style.display = "none";
-    }, 600);
-  });
-}
 
 /* =====================================================
    MASTER INIT (SINGLE ENTRY POINT)
@@ -405,7 +392,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initSearchPopup();
   initDataBackground();
 
-  initTestimonialSlider();
   initHeroSlider();
   initFeaturesSlider();
   initTextSlider();
@@ -417,5 +403,4 @@ document.addEventListener("DOMContentLoaded", () => {
   initMasonry();
   initCursor();
   initImagePopup();
-  initPageLoader();
 });

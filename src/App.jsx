@@ -1,33 +1,18 @@
-
-import HeroSection from "./components/Home/herosection";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
-import Feature from "./components/home/Feature";
-import AboutHome from "./components/home/Abouthome";
-import ServiceHome from "./components/home/Servicehome";
-import ChooseUsHome from "./components/home/chooseushome";
-import AboutSubHome from "./components/home/Aboutsubhome";
-import BrandSection from "./components/home/Brandsection";
-import TestimonialSection from "./components/home/Testimonialsection";
-import CtaSection from "./components/home/Ctasection";
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/layout/MainLayout";
+import ErrorPage from "./components/Pages/Error";
+import Home from "./components/Pages/HomePage";
 
 function App() {
+  return (
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+      </Route>
 
-  return(
-    <>
-    <Header/>
-    <HeroSection/>
-    <Feature/>
-    <AboutHome/>
-    <ServiceHome/>
-    <AboutSubHome/>
-    <ChooseUsHome/>
-    <BrandSection/>
-    <TestimonialSection/>
-    <CtaSection/>
-    <Footer/>
-    </>
-  )
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
+  );
 }
 
 export default App;

@@ -4,7 +4,7 @@ import { PiEnvelopeSimpleLight } from "react-icons/pi";
 import { GrLocation } from "react-icons/gr";
 import { BsTelephone } from "react-icons/bs";
 
-const Footer = () => {
+const FooterSec = () => {
     return (
         <footer className="footer-wrapper">
             <div className="container">
@@ -186,4 +186,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;  
+export default FooterSec;  

@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa6";
 import { FaInstagram ,FaYoutube,FaLinkedin } from "react-icons/fa";
 
-const Header = () => {
+const NavBar = () => {
 
   useEffect(() => {
     const header = document.getElementById("header-sticky");
@@ -252,4 +252,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
