@@ -12,7 +12,6 @@ import TestimonialSection from "../home/Testimonialsection"
 const Home = () => {
     return (
         <>
-
         <HeroSection/>
         <Feature/>
         <AboutHome/>
