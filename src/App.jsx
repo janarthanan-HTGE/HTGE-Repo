@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/MainLayout";
-import ErrorPage from "./components/pages/Error"
 import Home from "./components/pages/Homepage";
 import { Navigate } from "react-router-dom";
 import About from "./components/Pages/Aboutpage";
+import ErrorPage from "./components/pages/404";
 
 function App() {
   return (
