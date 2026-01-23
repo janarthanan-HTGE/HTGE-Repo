@@ -110,6 +110,7 @@ const NavBar = () => {
                       <a
                         className="text-black"
                         href="https://share.google/nIli1kelOepn2i9RD"
+                        target="_blank"
                         
                       >
                         TIDEL NEO, Tamil Nadu - 605111.
@@ -125,6 +126,7 @@ const NavBar = () => {
                       <a
                         className="text-black"
                         href="mailto:info@htge.org"
+                        target="_blank"
                       >
                         info@htge.org
                       </a>

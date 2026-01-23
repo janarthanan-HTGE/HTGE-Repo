@@ -16,7 +16,7 @@ const FooterSec = () => {
                     >
                     <div className="single-footer-widget me-xxl-5 pe-xxl-4">
                         <div className="widget-head">
-                        <Link to="index.html">
+                        <Link to="/">
                             <img
                             src="/assets/img/logo/black-logo.png"
                             alt="logo"
@@ -58,22 +58,22 @@ const FooterSec = () => {
 
                         <ul className="list-area">
                         <li>
-                            <a href="about.html">
+                            <Link to="/about">
                             <FaCircle size={4} />
                             About Us
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="services.html">
+                            <Link to="/services">
                             <FaCircle size={4} />
                             Our Services
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             Careers
-                            </a>
+                            </Link>
                         </li>
                         </ul>
                     </div>
@@ -88,28 +88,28 @@ const FooterSec = () => {
 
                         <ul className="list-area">
                         <li>
-                            <a href="contact.html">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             Software Development
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             Website Development
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             Mobile App Development
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="contact.html">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             IT Services & Support
-                            </a>
+                            </Link>
                         </li>
                        
                         </ul>
