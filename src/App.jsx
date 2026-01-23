@@ -1,9 +1,8 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/layout/MainLayout";
-import Home from "./components/pages/Homepage";
-import { Navigate } from "react-router-dom";
-import About from "./components/Pages/Aboutpage";
-import ErrorPage from "./components/pages/404";
+import Home from "./components/page/Homepage";
+import About from "./components/page/Aboutpage";
+import ErrorPage from "./components/page/404";
 
 function App() {
   return (
