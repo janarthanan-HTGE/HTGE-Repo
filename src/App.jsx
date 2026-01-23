@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/MainLayout";
-import ErrorPage from "./components/pages/Error";
+import ErrorPage from "./components/pages/Error"
 import Home from "./components/pages/Homepage";
 import { Navigate } from "react-router-dom";
 import About from "./components/Pages/Aboutpage";
@@ -14,7 +14,7 @@ function App() {
         <Route path="/about" element={<About />} />
       </Route>
 
-      <Route path="*" element={<ErrorPage />} />
+      <Route path="*" element={<ErrorPage/>}/>
     </Routes>
   );
 }
