@@ -6,7 +6,7 @@ import {
   FaLocationDot,
   FaEnvelope,
   FaPhone,
-  FaXTwitter
+  FaFacebook
 } from "react-icons/fa6";
 import { FaInstagram ,FaYoutube,FaLinkedin } from "react-icons/fa";
 
@@ -156,16 +156,16 @@ const NavBar = () => {
                 </div>
 
                 <div className="social-icon d-flex align-items-center">
-                  <a href="#">
+                  <a href="https://www.instagram.com/htge.technologies?igsh=cjI2ODJoNnpva3E2" target="_blank">
                     <FaInstagram />
                   </a>
-                  <a href="#">
-                    <FaXTwitter />
+                  <a href="https://www.facebook.com/p/HTGE-Technologies-Pvt-Ltd-61552079949922/" target="_blank">
+                    <FaFacebook/>
                   </a>
-                  <a href="#">
+                  <a href="https://youtube.com/@hitechinstitution?si=0X4iUTzCV6Q0bKvM" target="_blank">
                     <FaYoutube />
                   </a>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/company/htge-technologies-pvt-ltd" target="_blank">
                     <FaLinkedin />
                   </a>
                 </div>

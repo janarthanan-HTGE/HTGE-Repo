@@ -10,7 +10,7 @@ const ErrorPage = () => {
           <div className="error-content text-center text-error">
             <img src="/assets/img/coding.png" alt="coding" />
             <h5 className="fade-up text-error">
-              Website loading… developers arguing over semicolons
+              Website Under Development
             </h5>
             <Link
               to="/"

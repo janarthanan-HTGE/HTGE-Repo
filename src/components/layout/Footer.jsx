@@ -1,8 +1,9 @@
 import { FaInstagram ,FaYoutube,FaLinkedin,FaCircle  } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { PiEnvelopeSimpleLight } from "react-icons/pi";
 import { GrLocation } from "react-icons/gr";
 import { BsTelephone } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const FooterSec = () => {
     return (
@@ -15,13 +16,13 @@ const FooterSec = () => {
                     >
                     <div className="single-footer-widget me-xxl-5 pe-xxl-4">
                         <div className="widget-head">
-                        <a href="index.html">
+                        <Link to="index.html">
                             <img
                             src="/assets/img/logo/black-logo.png"
                             alt="logo"
                             width="100"
                             />
-                        </a>
+                        </Link>
                         </div>
 
                         <div className="footer-content">
@@ -30,16 +31,16 @@ const FooterSec = () => {
                         </p>
 
                         <div className="social-icon d-flex align-items-center">
-                            <a href="#">
+                            <a href="https://www.instagram.com/htge.technologies?igsh=cjI2ODJoNnpva3E2" target="_blank">
                             <FaInstagram />
                             </a>
-                            <a href="#">
-                            <FaXTwitter />
+                            <a href="https://www.facebook.com/p/HTGE-Technologies-Pvt-Ltd-61552079949922/" target="_blank">
+                            <FaFacebook />
                             </a>
-                            <a href="#">
+                            <a href="https://youtube.com/@hitechinstitution?si=0X4iUTzCV6Q0bKvM" target="_blank">
                             <FaYoutube />
                             </a>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/company/htge-technologies-pvt-ltd" target="_blank">
                             <FaLinkedin />
                             </a>
                         </div>
