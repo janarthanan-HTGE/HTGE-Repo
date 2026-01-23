@@ -168,7 +168,7 @@ const FooterSec = () => {
                 <div className="container">
                 <div className="footer-bottom-wrapper">
                     <p className="text-center">
-                    &copy; Copyright 2025 HTGE All Rights Reserved
+                    &copy; Copyright 2026 HTGE All Rights Reserved
                     </p>
                 </div>
                 </div>

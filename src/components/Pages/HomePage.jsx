@@ -8,9 +8,11 @@ import HeroSection from "../home/Hero"
 import ServiceHome from "../home/Servicehome"
 import TestimonialSection from "../home/Testimonialsection"
 
+
 const Home = () => {
     return (
         <>
+
         <HeroSection/>
         <Feature/>
         <AboutHome/>

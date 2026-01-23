@@ -64,7 +64,7 @@ const HeroSection = () => {
                 <div className="infu">
                   <img src="/assets/img/rating.png" alt="rating" />
                   <p>
-                    <span>200+</span> From&nbsp;200+&nbsp;reviews
+                    <span>4.8</span> From&nbsp;200+&nbsp;reviews
                   </p>
                 </div>
               </div>
