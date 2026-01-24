@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import navfunction from "../../utils/Navfunction.json"
 import {FaAngleDoubleRight} from 'react-icons/fa'
 
-const Breadcrumb = () => {
+const BreadCrumb = () => {
   const location = useLocation();
   const currentPath = location.pathname;
 
@@ -44,4 +44,4 @@ const Breadcrumb = () => {
   );
 };
 
-export default Breadcrumb;
+export default BreadCrumb;
