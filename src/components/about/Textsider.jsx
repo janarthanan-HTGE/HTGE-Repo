@@ -25,7 +25,7 @@ const marqueeTwo = [
 
 const MarqueeSection = () => {
   return (
-    <div className="marquee-section marque-wape">
+    <div className="marquee-section marque-wape fade-up">
 
       {/* 🔹 First Marquee (Left → Right) */}
       <div className="marque-wrapper">
