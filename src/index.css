@@ -7190,7 +7190,9 @@ p {
 .swiper-wrapper {
   will-change: transform;
 }
-
+.marque-wape{
+    transition-timing-function: linear !important;
+}
 .process-1 {
     position: relative;
 }
