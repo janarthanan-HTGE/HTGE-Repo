@@ -1,9 +1,16 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { FaArrowUp } from "react-icons/fa";
 
 const BackToTop = () => {
+  const { pathname } = useLocation();
+
   const [show, setShow] = useState(false);
   const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
 
   useEffect(() => {
     const onScroll = () => {
