@@ -29,7 +29,7 @@ html, body {
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
-  animation: fadeUp 1s ease-out forwards;
+  animation: fadeUp 2s ease-out forwards;
   animation-delay: 0.3s;
 }
 
@@ -87,8 +87,6 @@ html, body {
     transform: translateX(0);
   }
 }
-
-
 
 .theme-btn {
     position: relative;

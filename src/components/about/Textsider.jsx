@@ -40,7 +40,7 @@ const MarqueeSection = () => {
           autoplay={{
             delay: 0,
             disableOnInteraction: false,
-            pauseOnMouseEnter: false, // 🔥 IMPORTANT
+            pauseOnMouseEnter: false, 
           }}
           allowTouchMove={false}
           className="text-slider"

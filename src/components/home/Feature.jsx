@@ -37,7 +37,7 @@ const features = [
     delay: 0.8,
     description:"Training and placement support for job seekers",
     subone:"Career Support",
-    subtwo:"Fresher Focus",
+    subtwo:"Fresher Focus ",
   },
 ];
 
@@ -66,7 +66,6 @@ const Feature = () => {
                     <item.icon/>
                   </div>
                 </div>
-
                 <h4>
                   <a href="services-details.html">{item.title}</a>
                 </h4>
