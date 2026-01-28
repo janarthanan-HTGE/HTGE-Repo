@@ -1,11 +1,10 @@
 import { useRef } from "react";
 import CountUp from "react-countup";
-//eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa";
 import { MdAutoGraph } from "react-icons/md";
 import { PiCertificateLight } from "react-icons/pi";
 import useInViewObserver from "../../hooks/useInViewObserver";
+import useFadeUpCard from "../../hooks/useFadeUpCards";
 
 const ServiceHome = () => {
   const services = [
@@ -36,6 +35,8 @@ const ServiceHome = () => {
   const itemsRef = useRef([]);
   const countUpRef = useRef(null);
   const countUpStarted = useRef(false);
+  const fadeCards=useRef([]);
+  useFadeUpCard(fadeCards);
 
   useInViewObserver({
     refs: progressRef,
@@ -128,18 +129,11 @@ const ServiceHome = () => {
 
           <div className="row mt-4">
             {services.map((service, index) => (
-              <motion.div
-                key={service.id}
-                ref={(el) => (itemsRef.current[index + 2] = el)}
-                className="col-xl-4 col-lg-4 col-md-6 col-12 fade-up-card"
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{
-                  duration: 0.9,
-                  ease: "easeOut",
-                  delay: index * 0.15, 
-                }}
+              <div
+                key={index}
+                ref={(el) => (fadeCards.current[index] = el)}
+                className="col-xl-4 col-lg-6 col-md-6 col-12 fade-up-card"
+                data-delay={(index + 1) * 0.2}
               >
                 <div className="single-service-item">
                   <div className="shape">
@@ -167,7 +161,7 @@ const ServiceHome = () => {
                     <p>{service.desc}</p>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 

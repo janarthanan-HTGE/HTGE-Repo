@@ -4,15 +4,19 @@ import { PiEnvelopeSimpleLight } from "react-icons/pi";
 import { GrLocation } from "react-icons/gr";
 import { BsTelephone } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
+import useFadeUp from "../../hooks/useFadeup";
 
 const FooterSec = () => {
+    const fadeUp = useRef(null);
+    useFadeUp(fadeUp);
     return (
         <footer className="footer-wrapper">
-            <div className="container">
+            <div className="container fade-up" ref={fadeUp}>
                 <div className="footer-widgets-1 footer-padding">
                 <div className="row g-5">
                     <div
-                    className="col-xl-4 col-lg-6 fade-up"
+                    className="col-xl-4 col-lg-6 "
                     >
                     <div className="single-footer-widget me-xxl-5 pe-xxl-4">
                         <div className="widget-head">
@@ -49,7 +53,7 @@ const FooterSec = () => {
                     </div>
 
                     <div
-                    className="col-xl-2 col-lg-6 fade-up"
+                    className="col-xl-2 col-lg-6"
                     >
                     <div className="single-footer-widget ms-xxl-2">
                         <div className="widget-head">
@@ -79,7 +83,7 @@ const FooterSec = () => {
                     </div>
                     </div>
                     <div
-                    className="col-xl-3 col-lg-6 fade-up"
+                    className="col-xl-3 col-lg-6"
                     >
                     <div className="single-footer-widget ms-xxl-4 ps-xxl-3">
                         <div className="widget-head">
@@ -117,7 +121,7 @@ const FooterSec = () => {
                     </div>
 
                     <div
-                    className="col-xl-3 col-lg-6 fade-up"
+                    className="col-xl-3 col-lg-6"
                     >
                     <div className="single-footer-widget ms-xxl-3">
                         <div className="widget-head">

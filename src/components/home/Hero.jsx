@@ -1,10 +1,18 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import {
   initGsapHtge,
   destroyGsapHtge,
 } from "../../utils/Gsaphtge";
+import useFadeUp from "../../hooks/useFadeup";
 
 const HeroSection = () => {
+  const headingRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useFadeUp(headingRef);
+  useFadeUp(imageRef);
+
+
   useEffect(() => {
     document.fonts.ready.then(() => {
       initGsapHtge();
@@ -38,7 +46,7 @@ const HeroSection = () => {
           {/* LEFT CONTENT */}
           <div className="col-xl-6 col-lg-6 col-md-12 col-12">
             <div className="hero-content pe-xl-3 text-lg-start text-center tp-play-up">
-              <h1 className="fade-up">
+              <h1 ref={headingRef} className="fade-up">
                 Welcome To HTGE Technologies Pvt Ltd
               </h1>
               
@@ -72,7 +80,7 @@ const HeroSection = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="col-xl-6 col-lg-6 col-md-12 col-12 fade-up">
+          <div className="col-xl-6 col-lg-6 col-md-12 col-12 fade-up" ref={imageRef}>
             <div className="hero-image mx-lg-0 mx-auto md:-mb-5">
               <img
                 src="/assets/img/hero/hero-1.png"

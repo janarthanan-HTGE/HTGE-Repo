@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
+import { useRef } from "react";
+import useFadeUp from "../../hooks/useFadeup";
 
 const marqueeOne = [
   "Service Request Form",
@@ -24,16 +26,22 @@ const marqueeTwo = [
 ];
 
 const MarqueeSection = () => {
+  const fadeRef = useRef(null);
+  useFadeUp(fadeRef);
+
   return (
-    <div className="marquee-section marque-wape fade-up">
+    <div ref={fadeRef} className="marquee-section marque-wape fade-up">
 
       {/* 🔹 First Marquee (Left → Right) */}
       <div className="marque-wrapper">
         <Swiper
           modules={[Autoplay, FreeMode]}
           loop={true}
-          freeMode={true}
-          freeModeMomentum={false}
+          freeMode={{
+            enabled: true,
+            momentum: false,
+          }}
+
           slidesPerView="auto"
           spaceBetween={40}
           speed={8000}
@@ -65,8 +73,10 @@ const MarqueeSection = () => {
           modules={[Autoplay, FreeMode]}
           dir="rtl"
           loop={true}
-          freeMode={true}
-          freeModeMomentum={false}
+          freeMode={{
+            enabled: true,
+            momentum: false,
+          }}
           slidesPerView="auto"
           spaceBetween={40}
           speed={8000}

@@ -3,7 +3,7 @@ const CtaSection = () => {
         <section className="cta-1 ">
         <div className="container">
             <div
-            className="cta-inner bg-cover fade-up rounded-4xl"
+            className="cta-inner bg-cover rounded-4xl"
             >
             <div className="shape">
                 <img

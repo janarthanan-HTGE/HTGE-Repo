@@ -29,8 +29,10 @@ html, body {
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
+}
+.fade-up.in-view {
   animation: fadeUp 2s ease-out forwards;
-  animation-delay: 0.3s;
+  animation-delay: var(--delay, 0s);
 }
 
 .fade-up-card {
@@ -38,7 +40,25 @@ html, body {
   transform: translateY(60px);
 }
 
+.fade-up-card.in-view {
+  animation: fadeUpCard 0.9s ease-out forwards;
+}
 
+.fade-up-card.in-view[data-delay="0.2"] { animation-delay: 0.2s; }
+.fade-up-card.in-view[data-delay="0.4"] { animation-delay: 0.4s; }
+.fade-up-card.in-view[data-delay="0.6"] { animation-delay: 0.6s; }
+.fade-up-card.in-view[data-delay="0.8"] { animation-delay: 0.8s; }
+
+@keyframes fadeUpCard {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @keyframes fadeUp {
   from {

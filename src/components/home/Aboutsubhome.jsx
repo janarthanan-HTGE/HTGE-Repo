@@ -1,6 +1,11 @@
+import { useRef } from "react";
 import { RxEnvelopeClosed } from "react-icons/rx";
+import useFadeUp from "../../hooks/useFadeup";
 
 const AboutSubHome = () => {
+    const fadeRef = useRef(null);
+    useFadeUp(fadeRef);
+
     return (
         <section className="about-wrapper about-2 mx-xl-5 section-padding pt-0">
         <div
@@ -9,7 +14,7 @@ const AboutSubHome = () => {
         ></div>
 
         <div className="container">
-            <div className="about-content fade-up">
+            <div ref={fadeRef} className="about-content fade-up">
             <div className="section-title text-center">
                 <div className="sub-title sub-title2">
                 <span className="text-white">ABOUT OUR COMPANY</span>
