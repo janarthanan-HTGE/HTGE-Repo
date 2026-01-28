@@ -3,7 +3,7 @@ import {
   initGsapHtge,
   destroyGsapHtge,
 } from "../../utils/Gsaphtge";
-import useFadeUp from "../../hooks/useFadeup";
+import useFadeUp from "../../hooks/useFadeUpNor";
 
 const HeroSection = () => {
   const headingRef = useRef(null);

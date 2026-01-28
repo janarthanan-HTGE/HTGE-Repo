@@ -1,14 +1,12 @@
 import {Link} from 'react-router-dom';
 import NavBar from '../components/layout/Header';
 import { useRef } from 'react';
-import useFadeUp from '../hooks/useFadeup';
+import useFadeUp from '../hooks/useFadeUpNor';
 
 
 const ErrorPage = () => {
   const textUp = useRef(null);
-  const imgUp = useRef(null);
   useFadeUp(textUp);
-  useFadeUp(imgUp);
 
     return(
     <>
@@ -17,15 +15,17 @@ const ErrorPage = () => {
         <div className="container">
           <div className="error-content text-center text-error">
             <img src="/assets/img/coding.png" alt="coding" />
-            <h5 ref={textUp} className="text-error fade-up">
+            <div className='fade-up' ref={textUp}>
+              <h5 className="text-error ">
               Website Under Development
             </h5>
-            <Link ref={imgUp}
+            <Link
               to="/"
-              className="theme-btn black-btn mt-2 fade-up"
+              className="theme-btn black-btn mt-2"
             >
               Back To Home
             </Link>
+            </div>
           </div>
         </div>
       </section>

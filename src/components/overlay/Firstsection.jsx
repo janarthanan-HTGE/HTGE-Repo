@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import navfunction from "../../utils/Navfunction.json"
 import {FaAngleDoubleRight} from 'react-icons/fa'
 import { useRef } from "react";
-import useFadeUp from "../../hooks/useFadeup";
+import useFadeUp from "../../hooks/useFadeUpNor";
 
 const BreadCrumb = () => {
   const fadeUp = useRef(null);

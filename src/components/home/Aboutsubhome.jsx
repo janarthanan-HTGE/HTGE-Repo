@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { RxEnvelopeClosed } from "react-icons/rx";
-import useFadeUp from "../../hooks/useFadeup";
+import useFadeUp from "../../hooks/useFadeUpNor";
 
 const AboutSubHome = () => {
     const fadeRef = useRef(null);

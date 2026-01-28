@@ -5,7 +5,7 @@ import { GrLocation } from "react-icons/gr";
 import { BsTelephone } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
-import useFadeUp from "../../hooks/useFadeup";
+import useFadeUp from "../../hooks/useFadeUpNor";
 
 const FooterSec = () => {
     const fadeUp = useRef(null);

@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
 import "swiper/css";
 import { useRef } from "react";
-import useFadeUp from "../../hooks/useFadeup";
+import useFadeUp from "../../hooks/useFadeUpNor";
 
 const marqueeOne = [
   "Service Request Form",
