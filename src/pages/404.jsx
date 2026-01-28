@@ -5,8 +5,11 @@ import useFadeUp from '../hooks/useFadeup';
 
 
 const ErrorPage = () => {
-  const fadeUp = useRef(null);
-  useFadeUp(fadeUp);
+  const textUp = useRef(null);
+  const imgUp = useRef(null);
+  useFadeUp(textUp);
+  useFadeUp(imgUp);
+
     return(
     <>
       <NavBar/>
@@ -14,10 +17,10 @@ const ErrorPage = () => {
         <div className="container">
           <div className="error-content text-center text-error">
             <img src="/assets/img/coding.png" alt="coding" />
-            <h5 ref={fadeUp} className="text-error fade-up">
+            <h5 ref={textUp} className="text-error fade-up">
               Website Under Development
             </h5>
-            <Link ref={fadeUp}
+            <Link ref={imgUp}
               to="/"
               className="theme-btn black-btn mt-2 fade-up"
             >
