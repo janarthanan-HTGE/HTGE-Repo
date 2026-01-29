@@ -29,30 +29,33 @@ const MarqueeSection = () => {
   const fadeRef = useRef(null);
   useFadeUp(fadeRef);
 
+  const commonSwiperProps = {
+    modules: [Autoplay, FreeMode],
+    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 40,
+    speed: 8000,
+    freeMode: {
+      enabled: true,
+      momentum: true,
+      momentumRatio: 0.8,
+      momentumVelocityRatio: 0.7,
+    },
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: false,
+    },
+    allowTouchMove: true,
+    grabCursor: true,
+  };
+
   return (
     <div ref={fadeRef} className="marquee-section marque-wape fade-up">
 
       {/* 🔹 First Marquee (Left → Right) */}
       <div className="marque-wrapper">
-        <Swiper
-          modules={[Autoplay, FreeMode]}
-          loop={true}
-          freeMode={{
-            enabled: true,
-            momentum: false,
-          }}
-
-          slidesPerView="auto"
-          spaceBetween={40}
-          speed={8000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: false, 
-          }}
-          allowTouchMove={false}
-          className="text-slider"
-        >
+        <Swiper {...commonSwiperProps} className="text-slider">
           {[...marqueeOne, ...marqueeOne].map((item, index) => (
             <SwiperSlide
               key={index}
@@ -70,22 +73,8 @@ const MarqueeSection = () => {
       {/* 🔹 Second Marquee (Right → Left) */}
       <div className="marque-wrapper style-2 mt-3">
         <Swiper
-          modules={[Autoplay, FreeMode]}
+          {...commonSwiperProps}
           dir="rtl"
-          loop={true}
-          freeMode={{
-            enabled: true,
-            momentum: false,
-          }}
-          slidesPerView="auto"
-          spaceBetween={40}
-          speed={8000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: false, // 🔥 IMPORTANT
-          }}
-          allowTouchMove={false}
           className="text-slider-2"
         >
           {[...marqueeTwo, ...marqueeTwo].map((item, index) => (
