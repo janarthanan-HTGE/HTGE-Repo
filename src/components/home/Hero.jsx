@@ -6,10 +6,7 @@ import {
 import useFadeUp from "../../hooks/useFadeUpNor";
 
 const HeroSection = () => {
-  const headingRef = useRef(null);
   const imageRef = useRef(null);
-
-  useFadeUp(headingRef);
   useFadeUp(imageRef);
 
 
@@ -46,7 +43,7 @@ const HeroSection = () => {
           {/* LEFT CONTENT */}
           <div className="col-xl-6 col-lg-6 col-md-12 col-12">
             <div className="hero-content pe-xl-3 text-lg-start text-center tp-play-up">
-              <h1 ref={headingRef} className="fade-up">
+              <h1>
                 Welcome To HTGE Technologies Pvt Ltd
               </h1>
               
