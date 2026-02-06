@@ -10,7 +10,7 @@ const AboutVid = () => {
                 style={{ backgroundImage: "url(assets/img/video-02.jpg)" }}
                 >
                 <a
-                    href="https://www.youtube.com/watch?v=h9MbznbxlLc"
+                    href="#"
                     className="video-button video-popup"
                 >
                     <FaPlay size={28} color="#fff" />

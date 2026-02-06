@@ -1,27 +1,28 @@
 import { GiEyeTarget, GiWallet, GiWorld } from "react-icons/gi";
 import { FaArrowsToCircle } from "react-icons/fa6";
 import { GoRocket } from "react-icons/go";
+import { MdOutlineEngineering, MdOutlineTaskAlt, MdVerified } from "react-icons/md";
 
 const chooseItems = [
   {
     icon: FaArrowsToCircle,
     title: "Our Mission",
-    desc: "Back up your database, store in a safe and secure place while still maintaining.",
+    desc: " To empower business with innovative secure and efficient  IT solutions that simplify complexity.",
   },
   {
     icon: GiEyeTarget,
     title: "Our Vision",
-    desc: "Back up your database, store in a safe and secure place while still maintaining.",
+    desc: "To become  a world trusted IT service provider",
   },
   {
     icon: GoRocket,
     title: "Our Strategy",
-    desc: "Back up your database, store in a safe and secure place while still maintaining.",
+    desc: " We provide  technology with business objective throughcareful ,planning,plan execution and build trust",
   },
   {
     icon: GiWallet,
     title: "Our Philosophy",
-    desc: "Back up your database, store in a safe and secure place while still maintaining.",
+    desc: "We believe in building long term partnership by maintaining transparency and providing new innovation",
   },
 ];
 
@@ -39,34 +40,36 @@ const AboutChooseUs = () => {
                   <span>WHY CHOOSE US</span>
                 </div>
                 <h2>
-                  We provide truly <br />
-                  prominent IT solutions <br />
-                  for your success
+                  We deliver smart IT solutions that increase business growth
                 </h2>
               </div>
 
-              <p className="mt-4">
-                HTGE is the partner of choice for many of the world’s <br />
-                leading enterprises,
+              <p className="mt-4 text-center">
+                We help enhance digital performance and scale with confidence through reliable, future-ready IT solutions and well-trained teams to achieve business goals
               </p>
 
               <div className="reviews d-flex mt-4 pt-3">
                 <div className="infu">
-                  <img src="assets/img/why-choose/04.png" alt="" />
-                  <h4>
-                    Join our 50503+ <br /> Satisfied World Clients
-                  </h4>
+                  <div className="head d-flex align-items-center">
+                    <div className="icon">
+                      <MdVerified/>
+                    </div>
+                    <h4 className="mt-3">Trusted Partnership</h4>
+                  </div>
+                  <p>
+                    A reliable technology partner <br /> delivering consistent <br /> and scalable IT solutions.
+                  </p>
                 </div>
 
                 <div className="infu">
                   <div className="head d-flex align-items-center">
                     <div className="icon">
-                      <GiWorld />
+                      <MdOutlineEngineering/>
                     </div>
-                    <h4>Global Company</h4>
+                    <h4 className="mt-3">Industry Expertise</h4>
                   </div>
                   <p>
-                    Our great team of more than <br /> 1400 software experts member.
+                    Experienced professionals <br />delivering practical and <br /> future-ready IT solutions.
                   </p>
                 </div>
               </div>
