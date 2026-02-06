@@ -13,7 +13,7 @@ import CustomCursor from "./components/overlay/Cursor.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      {/* <BackToTop/> */}
+      <BackToTop/>
       <CustomCursor/>
       <App />
     </BrowserRouter>
