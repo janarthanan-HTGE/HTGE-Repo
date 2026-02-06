@@ -1,7 +1,7 @@
 import { GiEyeTarget, GiWallet, GiWorld } from "react-icons/gi";
 import { FaArrowsToCircle } from "react-icons/fa6";
 import { GoRocket } from "react-icons/go";
-import { MdOutlineEngineering, MdOutlineTaskAlt, MdVerified } from "react-icons/md";
+import { MdOutlineEngineering,MdVerified } from "react-icons/md";
 
 const chooseItems = [
   {
