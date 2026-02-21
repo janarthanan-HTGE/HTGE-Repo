@@ -1,0 +1,27 @@
+[
+  {
+    "icon": "FaBullhorn",
+    "title": "Digital Marketing",
+    "description": "Increase traffic, leads, and sales with marketing."
+  },
+  {
+    "icon": "FaCode",
+    "title": "Web Development",
+    "description": "Build responsive, secure, scalable websites for growth."
+  },
+  {
+    "icon": "FaLaptopCode",
+    "title": "Software Development",
+    "description": "Custom software development services for business growth"
+  },
+  {
+    "icon": "FaMobileAlt",
+    "title": "Mobile App Development",
+    "description": "Develop high-performance mobile apps for Android and iOS."
+  },
+  {
+    "icon": "FaHeadset",
+    "title": "IT Support & IT Services",
+    "description": "Reliable IT support, cybersecurity, cloud, and maintenance."
+  }
+]
