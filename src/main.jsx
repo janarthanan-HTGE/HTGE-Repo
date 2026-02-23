@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import "./index.css";
 import App from "./App.jsx";
@@ -12,10 +12,10 @@ import CustomCursor from "./components/overlay/Cursor.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <BackToTop/>
-      <CustomCursor/>
+    <HashRouter>
+      <BackToTop />
+      <CustomCursor />
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
