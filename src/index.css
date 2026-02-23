@@ -672,6 +672,7 @@ p {
     }
 }
 
+
 .section-title h2 span {
     color: var(--theme-2);
 }
@@ -10196,6 +10197,15 @@ p.sticky-label {
     }
 }
 
+@media (max-width: 575px) {
+  .cta-1 .cta-inner {
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  }
+}
 
 .cta-1 .cta-inner .shape-1 {
     position: absolute;

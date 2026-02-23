@@ -1,13 +1,13 @@
 import CtaSection from "../components/home/Ctasection";
 import BreadCrumb from "../components/overlay/Firstsection";
+import ServiceOverview from "../components/service/Serviceover";
 import Process from "../components/service/Serviceprocess";
-import ServicesSection from "../components/service/Serviceslist";
 
-const Service = () => {
+const ServiceDetails = () => {
     return (
         <>
-        <BreadCrumb />
-        <ServicesSection/>
+        <BreadCrumb/>
+        <ServiceOverview/>
         <Process/>
         <div className="mt-20">
             <CtaSection/>
@@ -16,4 +16,4 @@ const Service = () => {
     )
 }
 
-export default Service;
+export default ServiceDetails;

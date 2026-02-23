@@ -9,7 +9,8 @@ import {
   FaLaptopCode,
   FaMobileAlt,
   FaHeadset,
-  FaLongArrowAltRight
+  FaLongArrowAltRight,
+  FaPaintBrush
 } from "react-icons/fa";
 
 const iconMap = {
@@ -17,7 +18,8 @@ const iconMap = {
   FaCode,
   FaLaptopCode,
   FaMobileAlt,
-  FaHeadset
+  FaHeadset,
+  FaPaintBrush
 };
 
 const createSlug = (text) =>

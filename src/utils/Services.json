@@ -23,5 +23,10 @@
     "icon": "FaHeadset",
     "title": "IT Support & IT Services",
     "description": "Reliable IT support, cybersecurity, cloud, and maintenance."
+  },
+  {
+    "icon" : "FaPaintBrush",
+    "title" : "UI/UX Design",
+    "description" : "Create intuitive, engaging user interfaces and experiences."
   }
 ]

@@ -14,5 +14,29 @@
   {
     "title": "Contact",
     "path": "/contact"
-  }
+  },
+  {
+    "title": "Digital Marketing",
+    "path": "/services/digital-marketing"
+  },
+  {
+    "title": "Web Development",
+    "path": "/services/web-development"
+  },
+  {
+    "title": "Software Development",
+    "path": "/services/software-development"
+  },
+  {
+    "title": "Mobile App Development",
+    "path": "/services/mobile-app-development"
+  },
+    {
+      "title": "IT Support & IT Services",
+      "path": "/services/it-support-and-it-services"
+    },
+    {
+      "title" : "UI/UX Design",
+      "path" : "/services/ui-ux-design"
+    }
 ]

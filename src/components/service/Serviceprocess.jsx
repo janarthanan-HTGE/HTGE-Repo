@@ -2,6 +2,8 @@ import { BiConversation } from "react-icons/bi";
 import { LuMonitorCheck } from "react-icons/lu";
 import { GrVmMaintenance } from "react-icons/gr";
 import { GoCodeReview } from "react-icons/go";
+import shape6 from "/assets/img/process/shape-6.png";
+import shape7 from "/assets/img/process/shape-7.png";
 
 
 const Process = () => {
@@ -23,10 +25,10 @@ const Process = () => {
                 <div className="signle-process-item pe-xl-4">
                 <img
                     className="shape-1"
-                    src="assets/img/process/shape-6.png"
+                    src={shape6}
                     alt=""
                 />
-                <div className="icons">;
+                <div className="icons">
                     <div className="icon-1">
                     <BiConversation size={40} />
                     </div>
@@ -47,7 +49,7 @@ const Process = () => {
                 <div className="signle-process-item pe-xl-3 ps-xl-2">
                 <img
                     className="shape-2"
-                    src="assets/img/process/shape-7.png"
+                    src={shape7}
                     alt=""
                 />
                 <div className="icons">
@@ -71,7 +73,7 @@ const Process = () => {
                 <div className="signle-process-item ps-xl-3 pe-xl-2">
                 <img
                     className="shape-1"
-                    src="assets/img/process/shape-6.png"
+                    src={shape6}
                     alt=""
                 />
                 <div className="icons">
