@@ -225,7 +225,7 @@ const NavBar = () => {
                   {/* CTA BUTTON */}
                   <div className="header-button d-none d-sm-block">
                     <Link
-                      to="/contact"
+                      to="#"
                       className="theme-btn black-btn"
                     >
                       Get In Touch
