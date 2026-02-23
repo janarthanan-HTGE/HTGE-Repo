@@ -93,7 +93,7 @@ const NavBar = () => {
                     <Link to="/services" onClick={closeMenu}>Services</Link>
                   </li>
                   <li>
-                    <Link to="/contact" onClick={closeMenu}>Careers</Link>
+                    <Link to="#" onClick={closeMenu}>Careers</Link>
                   </li>
                 </ul>
               </div>
@@ -149,7 +149,7 @@ const NavBar = () => {
                 </ul>
                 <div className="header-button mt-4">
                   <Link
-                    to="/contact"
+                    to="#"
                     className="theme-btn black-btn"
                     onClick={closeMenu}
                   >
@@ -216,7 +216,7 @@ const NavBar = () => {
                             <Link to="/services">Services</Link>
                           </li>
                           <li>
-                            <Link to="/contact">Careers</Link>
+                            <Link to="#">Careers</Link>
                           </li>
                         </ul>
                       </nav>
