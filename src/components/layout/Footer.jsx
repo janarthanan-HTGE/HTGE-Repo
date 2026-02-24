@@ -74,7 +74,7 @@ const FooterSec = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link to="#">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             Careers
                             </Link>
@@ -92,25 +92,25 @@ const FooterSec = () => {
 
                         <ul className="list-area">
                         <li>
-                            <Link to="#">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             Software Development
                             </Link>
                         </li>
                         <li>
-                            <Link to="#">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             Website Development
                             </Link>
                         </li>
                         <li>
-                            <Link to="#">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             Mobile App Development
                             </Link>
                         </li>
                         <li>
-                            <Link to="#">
+                            <Link to="/contact">
                             <FaCircle size={4} />
                             IT Services & Support
                             </Link>

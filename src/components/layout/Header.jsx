@@ -93,7 +93,7 @@ const NavBar = () => {
                     <Link to="/services" onClick={closeMenu}>Services</Link>
                   </li>
                   <li>
-                    <Link to="#" onClick={closeMenu}>Careers</Link>
+                    <Link to="/career" onClick={closeMenu}>Careers</Link>
                   </li>
                 </ul>
               </div>
@@ -149,7 +149,7 @@ const NavBar = () => {
                 </ul>
                 <div className="header-button mt-4">
                   <Link
-                    to="#"
+                    to="/career"
                     className="theme-btn black-btn"
                     onClick={closeMenu}
                   >
@@ -216,7 +216,7 @@ const NavBar = () => {
                             <Link to="/services">Services</Link>
                           </li>
                           <li>
-                            <Link to="#">Careers</Link>
+                            <Link to="/career">Careers</Link>
                           </li>
                         </ul>
                       </nav>
@@ -225,7 +225,7 @@ const NavBar = () => {
                   {/* CTA BUTTON */}
                   <div className="header-button d-none d-sm-block">
                     <Link
-                      to="#"
+                      to="/contact"
                       className="theme-btn black-btn"
                     >
                       Get In Touch
