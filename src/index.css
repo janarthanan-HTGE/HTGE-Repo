@@ -10273,6 +10273,7 @@ p.sticky-label {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     row-gap: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.692);
 }
 
 @media (max-width: 991px) {
@@ -10285,9 +10286,10 @@ p.sticky-label {
     }
 }
 
-.cta-2 .cta-inner .icon {
+.cta-2 .cta-inner .icon{
     width: 114px;
     height: 114px;
+    border:var(--theme-2) 3px solid;
     border-radius: 50%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -10298,16 +10300,20 @@ p.sticky-label {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    cursor: pointer;
     background-color: var(--white);
     font-size: 53px;
     position: absolute;
     left: -56px;
     top: 50%;
+    color: var(--theme-2);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
-
+.cat .cta-2 .cta-inner .icon:hover{
+    background-color: var(--theme-2);
+    color: var(--white);
+    
+}
 @media (max-width: 991px) {
     .cta-2 .cta-inner .icon {
         left: 50%;
@@ -10319,12 +10325,6 @@ p.sticky-label {
     }
 }
 
-.cta-2 .cta-inner .icon i {
-    background-image: linear-gradient(84deg, var(--theme) 0%, var(--theme-2) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-}
 
 .cta-2 .cta-inner h3 {
     color: var(--white);
@@ -10362,11 +10362,11 @@ p.sticky-label {
 }
 
 .cta-2.style-3 {
-    margin-bottom: -105px;
+    margin-bottom: -47px;
 }
 
 .cta-2.style-3 .cta-inner {
-    background: linear-gradient(84deg, var(--theme) 0%, var(--theme-4) 100%);
+    background: linear-gradient(84deg, var(--theme) 0%, var(--theme-2) 100%);
 }
 
 .apps-wrapper {
@@ -11077,6 +11077,9 @@ p.sticky-label {
     z-index: 1;
 }
 
+.single-contact-card a{
+    color:black;
+}
 .single-contact-card::after {
     position: absolute;
     top: 0;
@@ -11097,7 +11100,6 @@ p.sticky-label {
 }
 
 .single-contact-card .icon {
-    font-size: 30px;
     color: var(--theme);
 }
 
@@ -11110,10 +11112,12 @@ p.sticky-label {
 .single-contact-card:hover .icon {
     color: var(--white) !important;
 }
-
+.single-contact-card h4{
+    font-size: 18px;
+}
 .single-contact-card:hover p,
 .single-contact-card:hover span,
-.single-contact-card:hover h4 {
+.single-contact-card:hover h4 a{
     color: #fff;
 }
 
@@ -11248,4 +11252,28 @@ p.sticky-label {
 
 .text-error{
     margin-top:50px
+}
+/* Fix container width */
+.custom-phone-container {
+  width: 100% !important;
+}
+
+/* Fix input design */
+.custom-phone-input {
+  width: 100% !important;
+  height: 55px !important;
+  border-radius: 6px !important;
+  border: 1px solid #e5e5e5 !important;
+  padding-left: 60px !important;
+}
+
+/* Fix flag button */
+.custom-phone-button {
+  border: none !important;
+  background: transparent !important;
+}
+
+/* Dropdown styling */
+.custom-dropdown {
+  z-index: 9999 !important;
 }

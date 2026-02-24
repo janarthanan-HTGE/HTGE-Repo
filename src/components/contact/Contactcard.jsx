@@ -1,4 +1,4 @@
-import React from "react";
+import { FaPhone,FaLocationDot,FaEnvelope } from "react-icons/fa6";
 
 const ContactInfo = () => {
   return (
@@ -10,7 +10,7 @@ const ContactInfo = () => {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-contact-card d-flex align-items-center">
               <div className="icon">
-                <i className="flaticon-telephone"></i>
+                <FaPhone size={30} />
               </div>
               <div className="title">
                 <span>Call Us</span>
@@ -27,7 +27,7 @@ const ContactInfo = () => {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-contact-card d-flex align-items-center">
               <div className="icon">
-                <i className="flaticon-location"></i>
+                <FaLocationDot size={30} />
               </div>
               <div className="title">
                 <span>Our Location</span>
@@ -37,8 +37,7 @@ const ContactInfo = () => {
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
-                    TIDEL NEO, Thiruchitrabalam - Koot Road, <br />
-                    Tamil Nadu - 605111
+                    TIDEL Neo - Villupuram
                   </a>
                 </h4>
               </div>
@@ -49,7 +48,7 @@ const ContactInfo = () => {
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-contact-card d-flex align-items-center">
               <div className="icon">
-                <i className="flaticon-email"></i>
+                <FaEnvelope size={30} />
               </div>
               <div className="title">
                 <span>Mail Us</span>

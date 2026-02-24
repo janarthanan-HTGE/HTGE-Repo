@@ -81,7 +81,7 @@ const AboutChooseUs = () => {
             <div className="choose-us-images">
               <img
                 className="shape-1"
-                src="assets/img/world.png"
+                src="/assets/img/world.png"
                 alt=""
               />
 
@@ -102,12 +102,12 @@ const AboutChooseUs = () => {
                         <div className="shape">
                           <img
                             className="shape-2"
-                            src="assets/img/shape/shape-10.png"
+                            src="/assets/img/shape/shape-10.png"
                             alt=""
                           />
                           <img
                             className="shape-3"
-                            src="assets/img/shape/shape-11.png"
+                            src="/assets/img/shape/shape-11.png"
                             alt=""
                           />
                         </div>

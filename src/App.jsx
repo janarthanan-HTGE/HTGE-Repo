@@ -6,6 +6,7 @@ import About from "./pages/Aboutpage";
 import Service from "./pages/Servicepage";
 import ErrorPage from "./pages/404";
 import ServiceDetails from "./pages/Servicedetailpage";
+import Contactpage from "./pages/contactpage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
         {/* dynamic service page */}
         <Route path="/services/:slug" element={<ServiceDetails/>} />
+        <Route path="/contact" element={<Contactpage />} />
 
       </Route>
 
