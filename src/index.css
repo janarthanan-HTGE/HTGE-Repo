@@ -11565,3 +11565,255 @@ height:36px;
 }
 
 }
+
+/* OVERLAY BACKGROUND */
+
+.apply-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:1000;
+padding:20px;
+}
+
+
+/* CARD */
+
+.apply-card{
+background:#fff;
+width:420px;
+max-width:100%;
+padding:30px;
+border-radius:8px;
+border:2px solid #7735AC;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+position:relative;
+}
+
+
+/* CLOSE BUTTON */
+
+.close-btn{
+position:absolute;
+top:10px;
+right:14px;
+border:none;
+background:none;
+font-size:22px;
+cursor:pointer;
+color:#555;
+}
+
+
+/* TITLE */
+
+.apply-title{
+text-align:center;
+margin-bottom:20px;
+font-size:24px;
+font-weight:600;
+color:#7735AC;
+}
+
+
+/* FORM */
+
+.apply-form{
+display:flex;
+flex-direction:column;
+gap:14px;
+}
+
+
+/* INPUT FIELDS */
+
+.apply-form input{
+padding:12px 14px;
+border:2px solid #ddd;
+border-radius:6px;
+font-size:15px;
+color:#000;
+width:100%;
+}
+
+
+/* PLACEHOLDER */
+
+.apply-form input::placeholder{
+color:#999;
+}
+
+
+/* FOCUS */
+
+.apply-form input:focus{
+outline:none;
+border-color:#7735AC;
+}
+
+
+/* UPLOAD BOX */
+
+.upload-box{
+border:2px dashed #7735AC;
+padding:16px;
+border-radius:6px;
+display:flex;
+flex-direction:column;
+gap:8px;
+background:#fafafa;
+}
+
+.upload-area{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:8px;
+cursor:pointer;
+text-align:center;
+}
+
+.upload-area input{
+display:none;
+}
+
+.upload-icon{
+font-size:22px;
+color:#7735AC;
+}
+
+.upload-area span{
+font-size:14px;
+color:#333;
+}
+/* FILE INPUT */
+
+.upload-box input{
+border:none;
+padding:0;
+}
+
+
+/* LABEL */
+
+.upload-label{
+font-size:12px;
+color:#777;
+}
+
+
+/* ERROR */
+
+.error-text{
+font-size:13px;
+color:#e53935;
+}
+
+
+/* BUTTON */
+
+.submit-btn{
+padding:12px;
+border:none;
+background:#7735AC;
+color:white;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+transition:0.2s;
+}
+
+.submit-btn:hover{
+opacity:0.9;
+}
+
+
+/* LOADING */
+
+.loading-btn{
+opacity:0.7;
+cursor:not-allowed;
+}
+
+
+/* SUCCESS */
+
+.success-msg{
+text-align:center;
+font-size:18px;
+color:#7735AC;
+padding:30px 10px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:768px){
+
+.apply-card{
+padding:24px;
+}
+
+.apply-title{
+font-size:22px;
+}
+
+.submit-btn{
+padding:11px;
+}
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:480px){
+
+.apply-overlay{
+padding:14px;
+}
+
+.apply-card{
+padding:20px;
+border-radius:6px;
+}
+
+.apply-title{
+font-size:20px;
+margin-bottom:16px;
+}
+
+.apply-form{
+gap:12px;
+}
+
+.apply-form input{
+font-size:14px;
+padding:10px 12px;
+}
+
+.upload-box{
+padding:14px;
+}
+
+.submit-btn{
+padding:10px;
+font-size:14px;
+}
+
+.close-btn{
+font-size:20px;
+}
+
+}

@@ -1,14 +1,16 @@
 import { useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import jobsData from "../../utils/Jobdata.json";
+import ApplyOverlay from "./Apply";
 
 const JobsSection = () => {
-  const perPage = 5;
+  const perPage = 3;
 
   const [jobs] = useState(jobsData);
   const [page, setPage] = useState(1);
   const [search, setSearch] = useState("");
   const [location, setLocation] = useState("All");
+  const [selectedJob, setSelectedJob] = useState(null);
   const locations = ["All", ...new Set(jobs.map((job) => job.location))];
 
 
@@ -91,7 +93,10 @@ const JobsSection = () => {
                 </p>
               </div>
 
-              <button className="go-btn">
+              <button
+                className="go-btn"
+                onClick={() => setSelectedJob(job)}
+                >
                 <svg viewBox="0 0 24 24">
                   <path d="M9 6l6 6-6 6" />
                 </svg>
@@ -129,6 +134,12 @@ const JobsSection = () => {
         </div>
 
       </div>
+      {selectedJob && (
+        <ApplyOverlay
+            job={selectedJob}
+            onClose={() => setSelectedJob(null)}
+        />
+        )}
     </section>
   );
 };
