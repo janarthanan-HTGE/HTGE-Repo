@@ -1,4 +1,5 @@
-import InternCta from "../components/career/intern";
+
+import InternSection from "../components/career/Interncta";
 import JobsSection from "../components/career/Job";
 import BreadCrumb from "../components/overlay/Firstsection";
 
@@ -7,7 +8,7 @@ const Career = () => {
         <>
         <BreadCrumb/>
         <JobsSection/>
-        <InternCta/>
+        <InternSection/>
         </>
     )
 }

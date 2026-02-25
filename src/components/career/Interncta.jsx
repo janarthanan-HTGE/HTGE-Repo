@@ -1,4 +1,4 @@
-const InternCta = () => {
+const InternSection = () => {
   return (
     <section className="cta-1">
       <div className="container">
@@ -48,4 +48,4 @@ const InternCta = () => {
   );
 };
 
-export default InternCta;
+export default InternSection;
