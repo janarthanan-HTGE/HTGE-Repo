@@ -17,7 +17,7 @@ const ContactMap = () => {
 
   return (
     <>
-      <div className="office-google-map-wrapper fade-up" ref={fadeRef}>
+      <div className="office-google-map-wrapper">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48214.223667309794!2d79.69495296478276!3d11.997387852672235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a53672e91a4b7bb%3A0x2aba1d84eecd6eae!2sHTGE%20Technologies%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1771939782749!5m2!1sen!2sin"
           style={{ border: 0 }}
@@ -38,7 +38,7 @@ const ContactMap = () => {
               <h3 className="split-text right">
                 Need Expert IT Solutions for Your Business?
               </h3>
-              <p>
+              <p className="fade-up" ref={fadeRef}>
                 Our team is ready to help you with innovative, scalable,
                 and secure digital solutions tailored to your business goals.
               </p>

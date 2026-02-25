@@ -9,8 +9,7 @@ const Contact = () => {
         <BreadCrumb/>
         <ContactInfo/>
         <ContactSection/>
-        <ContactMap/>
-        
+        <ContactMap/>    
         </>
     )
 }

@@ -137,7 +137,6 @@ function heroTextPlayUp() {
 
       let h1Clone = null;
 
-      // 🔥 REMOVE H1 BEFORE SPLIT (MOBILE ONLY)
       if (isMobile) {
         const h1 = el.querySelector("h1");
         if (h1) {
@@ -146,7 +145,6 @@ function heroTextPlayUp() {
         }
       }
 
-      // SPLIT REMAINING CONTENT ONLY
       const split = new SplitText(el, { type: "lines" });
 
       tl.from(split.lines, {
@@ -159,7 +157,6 @@ function heroTextPlayUp() {
         stagger: 0.1,
       });
 
-      // 🔥 PUT H1 BACK (UNCHANGED)
       if (isMobile && h1Clone) {
         el.prepend(h1Clone);
       }
@@ -241,9 +238,9 @@ function reveal(selector, axis, percent, scale) {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: el,
-        start: "top 85%",   // 🔥 REQUIRED
+        start: "top 85%",  
         toggleActions: "play none none reverse",
-        markers: false,     // set true to debug
+        markers: false,    
       },
     });
 

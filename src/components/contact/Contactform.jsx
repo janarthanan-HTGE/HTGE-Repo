@@ -33,8 +33,6 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
-
-    // Auto remove highlight after 2 seconds
     setTimeout(() => {
     setSubmitted(false);
     }, 2000);
