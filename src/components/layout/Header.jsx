@@ -95,6 +95,9 @@ const NavBar = () => {
                   <li>
                     <Link to="/career" onClick={closeMenu}>Careers</Link>
                   </li>
+                  <li>
+                    <Link to="/events" onClick={closeMenu}>Events</Link>
+                  </li>
                 </ul>
               </div>
 
@@ -217,6 +220,9 @@ const NavBar = () => {
                           </li>
                           <li>
                             <Link to="/career">Careers</Link>
+                          </li>
+                          <li>
+                            <Link to="/events">Events</Link>
                           </li>
                         </ul>
                       </nav>

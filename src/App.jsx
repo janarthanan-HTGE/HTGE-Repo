@@ -8,6 +8,7 @@ import ErrorPage from "./pages/404";
 import ServiceDetails from "./pages/Servicedetailpage";
 import Contact from "./pages/contactpage";
 import Career from "./pages/Careerpage";
+import Event from "./pages/Eventpage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/services/:slug" element={<ServiceDetails/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/career" element={<Career/>} />
+        <Route path="/events" element={<Event/>} />
 
       </Route>
 

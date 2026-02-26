@@ -19,6 +19,10 @@
     "path": "/career"
   },
   {
+    "title": "Events & Gallery",
+    "path": "/events"
+  },
+  {
     "title": "Digital Marketing",
     "path": "/services/digital-marketing"
   },
