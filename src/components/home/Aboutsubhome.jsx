@@ -32,7 +32,7 @@ const AboutSubHome = () => {
             </p>
 
             <div className="infu text-center d-flex align-items-center justify-content-center">
-                <a href="about.html" className="theme-btn">
+                <a href="/about" className="theme-btn">
                 Get Started Now
                 </a>
 

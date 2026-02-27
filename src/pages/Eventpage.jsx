@@ -1,4 +1,5 @@
 import EventsSection from "../components/events/Eventcards";
+import MasonryGallery from "../components/events/Gallery";
 import BreadCrumb from "../components/overlay/Firstsection";
 
 const Event = () => {
@@ -6,6 +7,7 @@ const Event = () => {
         <>
         <BreadCrumb/>
         <EventsSection/>
+        <MasonryGallery/>
         </>
     )
 }

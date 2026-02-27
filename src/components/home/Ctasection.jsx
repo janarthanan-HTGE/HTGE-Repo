@@ -28,7 +28,7 @@ const CtaSection = () => {
                 </h2>
               </div>
 
-              <a href="/about" className="theme-btn mt-4">
+              <a href="/contact" className="theme-btn mt-4">
                 Get Started Now
               </a>
             </div>

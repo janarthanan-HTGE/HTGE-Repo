@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1432462770865-65b70566d673?auto=format&fit=crop&w=800&q=80",
+    "alt": "Car Interior"
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1629367494173-c78a56567877?auto=format&fit=crop&w=800&q=80",
+    "alt": "Office Work"
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    "alt": "Mountain Lake"
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1552960562-daf630e9278b?auto=format&fit=crop&w=800&q=80",
+    "alt": "Workspace"
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?auto=format&fit=crop&w=800&q=80",
+    "alt": "Team Meeting"
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+    "alt": "Collaboration"
+  },
+  {
+    "id": 7,
+    "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80",
+    "alt": "Nature View"
+  },
+  {
+    "id": 8,
+    "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    "alt": "Business Discussion"
+  },
+  {
+    "id": 9,
+    "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+    "alt": "Coding Session"
+  },
+  {
+    "id": 10,
+    "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=800&q=80",
+    "alt": "Conference Event"
+  },
+  {
+    "id": 11,
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
+    "alt": "Workshop"
+  },
+  {
+    "id": 12,
+    "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
+    "alt": "Presentation"
+  }
+]

@@ -1,65 +1,10 @@
 [
   {
     "id": 1,
-    "bg": "/events/event1.jpg",
+    "bg": "/assets/img/events/p-1.jpg",
     "title": "Free Webinar",
-    "description": "How to pass solution architect exam in 30 days.",
+    "description": "Build your career with us",
     "location": "Remote",
-    "link": "https://forms.gle/xxxx"
-  },
-  {
-    "id": 2,
-    "bg": "/events/event2.jpg",
-    "title": "Master AI Driven DevOps",
-    "description": "Industry standard automation training.",
-    "location": "Remote",
-    "link": "https://forms.gle/xxxx"
-  },
-  {
-    "id": 3,
-    "bg": "/events/event3.jpg",
-    "title": "AWS DevOps Real Time",
-    "description": "Become a cloud & devops engineer.",
-    "location": "Remote",
-    "link": "https://forms.gle/xxxx"
-  },
-  {
-    "id": 4,
-    "bg": "/events/event4.jpg",
-    "title": "Kubernetes Bootcamp",
-    "description": "Hands-on kubernetes projects.",
-    "location": "Remote",
-    "link": "https://forms.gle/xxxx"
-  },{
-    "id": 5,
-    "bg": "/events/event1.jpg",
-    "title": "Free Webinar",
-    "description": "How to pass solution architect exam in 30 days.",
-    "location": "Remote",
-    "link": "https://forms.gle/xxxx"
-  },
-  {
-    "id": 6,
-    "bg": "/events/event2.jpg",
-    "title": "Master AI Driven DevOps",
-    "description": "Industry standard automation training.",
-    "location": "Remote",
-    "link": "https://forms.gle/xxxx"
-  },
-  {
-    "id": 7,
-    "bg": "/events/event3.jpg",
-    "title": "AWS DevOps Real Time",
-    "description": "Become a cloud & devops engineer.",
-    "location": "Remote",
-    "link": "https://forms.gle/xxxx"
-  },
-  {
-    "id": 8,
-    "bg": "/events/event4.jpg",
-    "title": "Kubernetes Bootcamp",
-    "description": "Hands-on kubernetes projects.",
-    "location": "Remote",
-    "link": "https://forms.gle/xxxx"
+    "link": "#"
   }
 ]

@@ -43,7 +43,7 @@ export default function EventsSection() {
   return (
     <section
       className="events-section"
-      style={{ backgroundImage: "url('/assets/img/events/bg.png')" }}
+      style={{ backgroundImage: "url('/assets/img/job/bg.png')" }}
     >
       <div className="events-container">
 

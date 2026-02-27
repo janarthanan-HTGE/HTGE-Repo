@@ -53,7 +53,7 @@ const HeroSection = () => {
               </p>
 
               <div className="hero-button mt-4 tp-play-up">
-                <a href="causes.html" className="theme-btn tp-btn-bounce">
+                <a href="/services" className="theme-btn tp-btn-bounce">
                   Explore More
                 </a>
               </div>

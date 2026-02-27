@@ -152,11 +152,11 @@ const NavBar = () => {
                 </ul>
                 <div className="header-button mt-4">
                   <Link
-                    to="/career"
+                    to="/contact"
                     className="theme-btn black-btn"
                     onClick={closeMenu}
                   >
-                    Careers
+                    Get in Touch
                   </Link>
                 </div>
 

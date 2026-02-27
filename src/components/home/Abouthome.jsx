@@ -99,8 +99,8 @@ const AboutHome = () => {
               </ul>
 
               <div className="about-infu">
-                <a href="" className="theme-btn black-btn">
-                  More About Us
+                <a href="/services" className="theme-btn black-btn">
+                  our services
                 </a>
 
                 <div className="contact-us">
