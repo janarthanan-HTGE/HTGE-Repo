@@ -22,15 +22,10 @@ const ApplyOverlay = ({ job, onClose }) => {
       const file = files[0];
 
       if (!file) return;
-
-      /* FILE TYPE */
-
       if (file.type !== "application/pdf") {
         setError("Only PDF files allowed.");
         return;
       }
-
-      /* FILE SIZE */
 
       if (file.size > 200 * 1024) {
         setError("Resume must be under 200KB.");
@@ -131,8 +126,6 @@ const ApplyOverlay = ({ job, onClose }) => {
               {error && (
                 <p className="error-text">{error}</p>
               )}
-
-              {/* BUTTON OR LOADING */}
 
               {!loading ? (
                 <button className="submit-btn">

@@ -43,8 +43,6 @@ const JobsSection = () => {
           </div>
           <h2>Let’s Find Your Role at HTGE</h2>
         </div>
-
-        {/* Filters */}
         <div className="jobs-search">
 
           <div className="select-wrapper">
@@ -78,8 +76,6 @@ const JobsSection = () => {
           />
 
         </div>
-
-        {/* Jobs List */}
         <div className="jobs-list">
           {current.map((job) => (
             <div key={job.id} className="job-card">
@@ -105,8 +101,6 @@ const JobsSection = () => {
             </div>
           ))}
         </div>
-
-        {/* Pagination */}
         <div className="pagination">
 
           <button
