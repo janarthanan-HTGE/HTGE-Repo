@@ -18,7 +18,6 @@ const AboutHome = () => {
     <section className="about-wrapper about-1 section-padding overflow-hidden">
       <div className="container">
         <div className="row g-4 items-center">
-          {/* LEFT */}
           <div
             ref={leftRef}
             className="
@@ -52,8 +51,6 @@ const AboutHome = () => {
               </div>
             </div>
           </div>
-
-          {/* RIGHT */}
           <div
             ref={rightRef}
             className="

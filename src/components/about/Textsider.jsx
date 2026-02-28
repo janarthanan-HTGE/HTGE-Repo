@@ -5,24 +5,23 @@ import { useRef } from "react";
 import useFadeUp from "../../hooks/useFadeUpNor";
 
 const marqueeOne = [
-  "Service Request Form",
-  "Online Booking System",
-  "Service Price Calculator",
-  "Secure Payment Gateway",
-  "Live Chat Support",
-  "Real-Time Notifications",
-  "Customer Account Dashboard",
+  "Search Engine Optimization (SEO) Services",
+  "Custom Website Design & Development",
+  "Full-Stack Web Application Development",
+  "Pay-Per-Click (PPC) Advertising Campaigns",
+  "E-commerce Website Development",
+  "Enterprise Software Development Solutions",
+  "Mobile App Development Services",
 ];
 
 const marqueeTwo = [
-  "Service Request Form",
-  "Customer Reviews Display",
-  "FAQ Section Integration",
-  "Mobile-Friendly Interface",
-  "Personalized Service Options",
-  "Service Location Tracker",
-  "Multi-Step Service Checkout",
-  "Subscription Plan Options",
+  "Social Media Marketing & Lead Generation",
+  "Cloud-Based Software Solutions",
+  "UI/UX Design & Conversion Optimization",
+  "CRM & ERP Software Development",
+  "API Integration & Secure Payment Gateway",
+  "AI & Automation Software Solutions",
+  "Website Maintenance & Technical Support",
 ];
 
 const MarqueeSection = () => {
@@ -52,8 +51,6 @@ const MarqueeSection = () => {
 
   return (
     <div ref={fadeRef} className="marquee-section marque-wape fade-up">
-
-      {/* 🔹 First Marquee (Left → Right) */}
       <div className="marque-wrapper">
         <Swiper {...commonSwiperProps} className="text-slider">
           {[...marqueeOne, ...marqueeOne].map((item, index) => (
@@ -70,7 +67,6 @@ const MarqueeSection = () => {
         </Swiper>
       </div>
 
-      {/* 🔹 Second Marquee (Right → Left) */}
       <div className="marque-wrapper style-2 mt-3">
         <Swiper
           {...commonSwiperProps}

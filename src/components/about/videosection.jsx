@@ -16,6 +16,8 @@ const AboutVid = () => {
                 <a
                     href="#"
                     className="video-button video-popup"
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <FaPlay size={28} color="#fff" />
                     <i className="video-button-ripple"></i>

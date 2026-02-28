@@ -41,7 +41,6 @@ const HeroSection = () => {
 
       <div className="container">
         <div className="row align-items-center">
-          {/* LEFT CONTENT */}
           <div className="col-xl-6 col-lg-6 col-md-12 col-12">
             <div className="hero-content pe-xl-3 text-lg-start text-center">
               <div className="tp-play-up">
@@ -80,8 +79,6 @@ const HeroSection = () => {
               </div>
             </div>
           </div>
-
-          {/* RIGHT IMAGE */}
           <div className="col-xl-6 col-lg-6 col-md-12 col-12 fade-up" ref={imageRef}>
             <div className="hero-image mx-lg-0 mx-auto md:-mb-5">
               <img

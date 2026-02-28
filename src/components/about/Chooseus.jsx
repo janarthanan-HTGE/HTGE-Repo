@@ -31,8 +31,6 @@ const AboutChooseUs = () => {
     <section className="choose-us-wrapper choose-us-3 section-padding chooseus-bg choose-us-page">
       <div className="container">
         <div className="row g-5">
-
-          {/* LEFT CONTENT */}
           <div className="col-xl-6 col-lg-12 col-md-12 mt-xl-4">
             <div className="choose-us-content ms-xl-4 ps-xl-1">
               <div className="section-title">
@@ -75,14 +73,12 @@ const AboutChooseUs = () => {
               </div>
             </div>
           </div>
-
-          {/* RIGHT CONTENT */}
           <div className="col-xl-6 col-lg-12 col-md-12">
             <div className="choose-us-images">
               <img
                 className="shape-1"
                 src="/assets/img/world.png"
-                alt=""
+                alt="world"
               />
 
               <div className="row">
@@ -97,22 +93,18 @@ const AboutChooseUs = () => {
                       }`}
                     >
                       <div className="single-choose-item mt-4 mt-xl-0">
-
-                        {/* SHAPES */}
                         <div className="shape">
                           <img
                             className="shape-2"
                             src="/assets/img/shape/shape-10.png"
-                            alt=""
+                            alt="shape"
                           />
                           <img
                             className="shape-3"
                             src="/assets/img/shape/shape-11.png"
-                            alt=""
+                            alt="shape"
                           />
                         </div>
-
-                        {/* CONTENT */}
                         <div className="icon">
                           <Icon />
                         </div>
