@@ -46,8 +46,6 @@ export default function EventsSection() {
       style={{ backgroundImage: "url('/assets/img/job/bg.png')" }}
     >
       <div className="events-container">
-
-        {/* KEEP ORIGINAL CLASSES */}
         <div className="section-title text-center">
           <div className="sub-title">
             <span>Find Jobs for You</span>

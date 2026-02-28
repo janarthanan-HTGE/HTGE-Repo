@@ -27,10 +27,6 @@ export default function CustomGallery() {
   const next = () => page < totalPages && setPage(page + 1);
   const prev = () => page > 1 && setPage(page - 1);
 
-  /*
-  Smooth auto scroll
-  */
-
   useEffect(() => {
 
     if (!isMobile) return;
@@ -88,8 +84,6 @@ export default function CustomGallery() {
         ))}
 
       </div>
-
-      {/* Pagination */}
         {galleryData.length > perPage && (
         <div className="pagination">
 
