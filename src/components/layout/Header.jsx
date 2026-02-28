@@ -80,7 +80,6 @@ const NavBar = () => {
                   </button>
                 </div>
               </div>
-              {/* MOBILE MENU (SAME DESIGN STRUCTURE) */}
               <div className="mobile-menu fix mb-3">
                 <ul>
                   <li>
@@ -179,14 +178,10 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-
-      {/* OFFCANVAS OVERLAY */}
       <div
         className="offcanvas__overlay"
         onClick={closeMenu}
       ></div>
-
-      {/* ================= HEADER SECTION ================= */}
       <header>
         <div id="header-sticky" className="header-1">
           <div className="container">
@@ -204,7 +199,6 @@ const NavBar = () => {
                 </div>
 
                 <div className="header-right">
-                  {/* DESKTOP MENU */}
                   <div className="mean__menu-wrapper d-none d-xl-block">
                     <div className="main-menu">
                       <nav>
@@ -228,7 +222,6 @@ const NavBar = () => {
                       </nav>
                     </div>
                   </div>
-                  {/* CTA BUTTON */}
                   <div className="header-button d-none d-sm-block">
                     <Link
                       to="/contact"
@@ -237,8 +230,6 @@ const NavBar = () => {
                       Get In Touch
                     </Link>
                   </div>
-
-                  {/* MOBILE HAMBURGER */}
                   <div className="header__hamburger d-xl-none my-auto">
                     <button
                       className="sidebar__toggle"
