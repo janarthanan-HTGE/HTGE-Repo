@@ -32,8 +32,6 @@ const Process = () => {
         </div>
 
         <div className="row mt-4">
-
-          {/* 01 */}
           <div className="col-xl-3 col-lg-6 col-md-6">
             <div
               ref={ref1}
@@ -55,8 +53,6 @@ const Process = () => {
               </p>
             </div>
           </div>
-
-          {/* 02 */}
           <div className="col-xl-3 col-lg-6 col-md-6 mt-xl-5">
             <div
               ref={ref2}
@@ -78,8 +74,6 @@ const Process = () => {
               </p>
             </div>
           </div>
-
-          {/* 03 */}
           <div className="col-xl-3 col-lg-6 col-md-6">
             <div
               ref={ref3}
@@ -101,8 +95,6 @@ const Process = () => {
               </p>
             </div>
           </div>
-
-          {/* 04 */}
           <div className="col-xl-3 col-lg-6 col-md-6 mt-xl-5">
             <div
               ref={ref4}
@@ -123,7 +115,6 @@ const Process = () => {
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
