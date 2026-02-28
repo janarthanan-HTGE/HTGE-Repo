@@ -72,23 +72,21 @@ const ContactSection = () => {
             <img
             className="shape-1"
             src="/assets/img/shape/shape-21.png"
-            alt=""
+            alt="shape"
             />
             <img
             className="shape-2"
             src="/assets/img/shape/shape-11.png"
-            alt=""
+            alt="shape"
             />
             <img
             className="shape-3"
             src="/assets/img/shape/shape-22.png"
-            alt=""
+            alt="shape"
             />
         </div>
 
         <div className="container">
-
-            {/* Section Title */}
             <div className="section-title text-center">
             <div className="sub-title">
                 <span>CONTACT US</span>
@@ -99,8 +97,6 @@ const ContactSection = () => {
             </div>
         <div className="contact-us-inner">
           <div className="row g-5">
-
-            {/* LEFT SIDE */}
             <div className="col-xl-6 col-lg-12 col-md-12 pe-xl-0">
               <div className="contact-left">
                 <form id="contact-form" onSubmit={handleSubmit}>
@@ -160,8 +156,6 @@ const ContactSection = () => {
                         />
                       </div>
                     </div>
-
-                    {/* PHONE (Classes NOT changed) */}
                     <div className="col-lg-6 pe-0">
                       <span>Phone Number</span>
                       <div
@@ -187,10 +181,7 @@ const ContactSection = () => {
                         />
                       </div>
                     </div>
-
                   </div>
-
-                  {/* Company Type */}
                   <div className="categories mt-4 pt-3">
                     <span className="fw-semibold">
                       What's the type of your company?
@@ -207,7 +198,7 @@ const ContactSection = () => {
                         borderRadius: "5px",
                       }}
                     >
-                      {["IT Company", "Business", "Cyber Security", "Other"].map(
+                      {["IT Company", "Business", "Education related", "Other"].map(
                         (type) => (
                           <div
                             key={type}
@@ -226,8 +217,6 @@ const ContactSection = () => {
                       )}
                     </div>
                   </div>
-
-                  {/* Services */}
                   <div className="checked-box mt-4 pt-3">
                     <span className="fw-semibold">
                       What you need from us?
@@ -245,11 +234,11 @@ const ContactSection = () => {
                       }}
                     >
                       {[
-                        "App Design",
                         "Digital Marketing",
-                        "UI/UX Design",
-                        "Cloud Service",
-                        "Other Services",
+                        "Web Development",
+                        "Software Development",
+                        "IT support",
+                        "Other",
                       ].map((service) => (
                         <div className="form-check" key={service}>
                           <input
@@ -270,8 +259,6 @@ const ContactSection = () => {
                 </form>
               </div>
             </div>
-
-            {/* RIGHT SIDE */}
             <div className="col-xl-6 col-lg-12 col-md-12">
               <div className="contact-right ps-xl-5 ms-xl-3">
 
@@ -291,8 +278,6 @@ const ContactSection = () => {
                     ></textarea>
                   </div>
                 </div>
-
-                {/* Terms */}
                 <div className="form-check mt-3">
                 <input
                     className="form-check-input"

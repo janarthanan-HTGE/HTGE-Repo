@@ -5,8 +5,6 @@ const ContactInfo = () => {
     <section className="contact-page-wrap section-padding">
       <div className="container">
         <div className="row g-4">
-          
-          {/* Phone */}
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-contact-card d-flex align-items-center">
               <div className="icon">
@@ -22,8 +20,6 @@ const ContactInfo = () => {
               </div>
             </div>
           </div>
-
-          {/* Location */}
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-contact-card d-flex align-items-center">
               <div className="icon">
@@ -43,8 +39,6 @@ const ContactInfo = () => {
               </div>
             </div>
           </div>
-
-          {/* Email */}
           <div className="col-lg-4 col-md-6 col-12">
             <div className="single-contact-card d-flex align-items-center">
               <div className="icon">
@@ -60,7 +54,6 @@ const ContactInfo = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
