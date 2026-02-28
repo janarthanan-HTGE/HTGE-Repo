@@ -32,8 +32,8 @@ const ChooseUsHome = () => {
       if (countStarted.current) return;
       countStarted.current = true;
 
-      startCount(count98Ref.current, 90);
-      startCount(count6795Ref.current, 2658);
+      startCount(count98Ref.current, 98);
+      startCount(count6795Ref.current, 158);
     },
   });
 
@@ -47,11 +47,9 @@ const ChooseUsHome = () => {
                 </linearGradient>
             </defs>
         </svg>
-
       <div className="shape">
         <img src="/assets/img/world.png" alt="world" />
       </div>
-
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-12 col-md-12">
@@ -65,7 +63,6 @@ const ChooseUsHome = () => {
               </div>
             </div>
           </div>
-
           <div
             ref={rightRef}
             className="col-xl-6 col-lg-8 col-md-12 mt-5 pt-4 fade-right"
@@ -79,33 +76,9 @@ const ChooseUsHome = () => {
                   We Deliver Reliable IT Solutions for Your Business Success
                 </h2>
               </div>
-
               <p className="mt-4 pe-xl-5 me-xl-3 text-justify">
                 HTGE Technologies Pvt Ltd is a trusted IT partner for startups, SMEs, and enterprises worldwide. We support business growth through custom software development, digital marketing, managed IT services, and career-focused training by delivering secure, scalable, and cost-effective technology solutions. Our expert team follows industry best practices to provide tailored solutions with quality, transparency, and timely delivery. We focus on innovation, long-term partnerships, and measurable results to ensure sustainable business success.
               </p>
-
-              {/* <div className="icon-box d-flex mt-4 pt-3 text-center text-md-start">
-                <div className="single-icon-box">
-                  <div className="iconnic">
-                        <div className="icon"><BiWorld size={40}/></div>
-                  </div>
-                  <h4>Global Company</h4>
-                  <p>
-                    Our great team of more than to 1400 software experts member.
-                  </p>
-                </div>
-
-                <div className="single-icon-box">
-                  <div className="icon">
-                    <PiMedal size={40}/>
-                  </div>
-                  <h4>Award Wining</h4>
-                  <p>
-                    Our great team of more than to 1400 software experts member.
-                  </p>
-                </div>
-              </div> */}
-
               <div className="count-box">
                 <div className="single-count">
                   <h2>

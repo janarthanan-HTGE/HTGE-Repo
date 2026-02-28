@@ -12,7 +12,7 @@ export function initGsapHtge() {
   splitTextAnimation();
   textSplitUp();
   heroTextPlayUp();
-  heroButtonBounce();
+  heroButtonPlayUp();
   drawBorder();
   imageReveal();      
   hoverReveal();
@@ -110,6 +110,34 @@ function textSplitUp() {
 }
 
 /* =====================================================
+   HERO TEXT PLAY UP BTN
+===================================================== */
+function heroButtonPlayUp() {
+  const buttons = document.querySelectorAll(".tp-btn-play-up");
+
+  buttons.forEach((btn) => {
+    gsap.set(btn, { perspective: 400 });
+
+    gsap.fromTo(
+      btn,
+      {
+        opacity: 0,
+        rotationX: -80,
+      },
+      {
+        opacity: 1,
+        rotationX: 0,
+        duration: 1,
+        delay: 1, 
+        force3D: true,
+        transformOrigin: "top center -50",
+        ease: "power2.out",
+      }
+    );
+  });
+}
+
+/* =====================================================
    HERO TEXT PLAY UP
 ===================================================== */
 function heroTextPlayUp() {
@@ -163,38 +191,6 @@ function heroTextPlayUp() {
     });
   }
 }
-
-
-/* =====================================================
-   HERO BUTTON BOUNCE
-===================================================== */
-function heroButtonBounce() {
-  const triggers = document.querySelectorAll(".tp-btn-trigger");
-  if (!triggers.length) return;
-
-  gsap.set(".tp-btn-bounce", {
-    y: -150,
-    opacity: 0,
-  });
-
-  gsap.utils.toArray(".tp-btn-bounce").forEach((btn) => {
-    const trigger = btn.closest(".tp-btn-trigger");
-    if (!trigger) return;
-
-    gsap.to(btn, {
-      y: 0,
-      opacity: 1,
-      duration: 1.5,
-      delay: 1,
-      ease: "bounce.out",
-      scrollTrigger: {
-        trigger,
-        start: "top center",
-      },
-    });
-  });
-}
-
 /* =====================================================
    DRAW BORDER
 ===================================================== */

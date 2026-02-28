@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { FaStar,FaLongArrowAltRight,FaLongArrowAltLeft } from "react-icons/fa";
-import "swiper/css";
 import "swiper/css/navigation";
 
 const testimonials = [

@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import useFadeUpCard from "../../hooks/useFadeUpCards";
-
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { PiCertificateLight } from "react-icons/pi";
 import { MdOutlineDesignServices } from "react-icons/md";

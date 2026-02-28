@@ -63,7 +63,6 @@ const ServiceHome = () => {
         <img className="shape-1" src="/assets/img/shape/shape-1.png" alt="DNA" />
         <img className="shape-2" src="/assets/img/world.png" alt="world" />
       </div>
-
       <div className="container">
         <div className="service-inner">
           <div className="row">
@@ -83,14 +82,12 @@ const ServiceHome = () => {
                 </h3>
                 <p>Years of Experience</p>
               </div>
-
               <div className="section-title mt-4">
                 <h2 className="split-text left">
                   We Run End-to-End IT <br />Services That Drive Your Business Success
                 </h2>
               </div>
             </div>
-
             <div
               ref={(el) => (itemsRef.current[1] = el)}
               className="col-xl-5 col-lg-6 col-md-12 col-12 fade-right"
@@ -126,7 +123,6 @@ const ServiceHome = () => {
               </div>
             </div>
           </div>
-
           <div className="row mt-4">
             {services.map((service, index) => (
               <div
@@ -148,11 +144,9 @@ const ServiceHome = () => {
                       alt="curve-left"
                     />
                   </div>
-
                   <div className="image">
                     <img src={service.image} alt={service.title} />
                   </div>
-
                   <div className="content">
                     <div className="icon">
                       <div className="niki"><service.icon size={28} /></div>
@@ -164,9 +158,6 @@ const ServiceHome = () => {
               </div>
             ))}
           </div>
-
-
-
         </div>
       </div>
     </section>

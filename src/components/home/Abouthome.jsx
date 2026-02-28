@@ -1,7 +1,8 @@
-import {  useRef } from "react";
+import {  useRef} from "react";
 import { FaPlay} from "react-icons/fa6";
 import { FaCheckCircle } from "react-icons/fa";
 import useInViewObserver from "../../hooks/useInViewObserver";
+import {Link} from "react-router-dom";
 
 const AboutHome = () => {
   const leftRef = useRef(null);
@@ -17,7 +18,6 @@ const AboutHome = () => {
     <section className="about-wrapper about-1 section-padding overflow-hidden">
       <div className="container">
         <div className="row g-4 items-center">
-
           {/* LEFT */}
           <div
             ref={leftRef}
@@ -30,15 +30,12 @@ const AboutHome = () => {
             "
           >
             <div className="about-images relative">
-
               <a
                 href="https://www.youtube.com/watch?v=h9MbznbxlLc"
                 className="icon video-popup !hidden md:flex"
               >
                 <FaPlay />
               </a>
-
-
               <div className="image-1 aspect-[3/4]">
                 <img
                   src="/assets/img/about/01.jpg"
@@ -46,7 +43,6 @@ const AboutHome = () => {
                   className="w-full h-full object-cover block"
                 />
               </div>
-
               <div className="image-2 aspect-square">
                 <img
                   src="/assets/img/about/02.png"
@@ -78,11 +74,9 @@ const AboutHome = () => {
                   Highly Tailored Technology, Development &amp; Support Services
                 </h2>
               </div>
-
               <p>
                 Accelerate digital transformation with HTGE Technologies Pvt Ltd, an Indian-based Information Technology organization established in March 2017. Originating as a learning academy in Pondicherry, HTGE has evolved into a multi-vertical enterprise delivering reliable, scalable, and future-ready IT solutions for businesses worldwide.
               </p>
-
               <ul>
                 <li>
                   <div className="Circleab"><FaCheckCircle /></div>
@@ -97,12 +91,10 @@ const AboutHome = () => {
                   IT Training, Career Development & Skill Enhancement
                 </li>
               </ul>
-
               <div className="about-infu">
-                <a href="/services" className="theme-btn black-btn">
+                <Link to="/services" className="theme-btn black-btn">
                   our services
-                </a>
-
+                </Link>
                 <div className="contact-us">
                   <div className="text">
                     <span>Call to ask any question</span>
@@ -110,10 +102,8 @@ const AboutHome = () => {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { RxEnvelopeClosed } from "react-icons/rx";
 import useFadeUp from "../../hooks/useFadeUpNor";
 
@@ -12,7 +13,6 @@ const AboutSubHome = () => {
             className="bg-image bg-cover "
             style={{ backgroundImage: "url(assets/img/about/01-bg.png)" }}
         ></div>
-
         <div className="container">
             <div ref={fadeRef} className="about-content fade-up">
             <div className="section-title text-center">
@@ -32,12 +32,12 @@ const AboutSubHome = () => {
             </p>
 
             <div className="infu text-center d-flex align-items-center justify-content-center">
-                <a href="/about" className="theme-btn">
+                <Link to="/contact" className="theme-btn">
                 Get Started Now
-                </a>
+                </Link>
 
                 <div className="contact-us d-flex">
-                    <a href="">
+                    <a href="mailto:info@htge.org">
                         <RxEnvelopeClosed/>
                     </a>
 

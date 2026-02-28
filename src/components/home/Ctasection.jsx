@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CtaSection = () => {
   return (
     <section className="cta-1">
@@ -28,9 +30,9 @@ const CtaSection = () => {
                 </h2>
               </div>
 
-              <a href="/contact" className="theme-btn mt-4">
+              <Link to="/contact" className="theme-btn mt-4">
                 Get Started Now
-              </a>
+              </Link>
             </div>
 
             <div className="col-xl-6 col-lg-6 col-12">
