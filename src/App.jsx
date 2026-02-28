@@ -14,26 +14,15 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        
-        {/* redirect old index */}
         <Route path="/index.html" element={<Navigate to="/" replace />} />
-
-        {/* main pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-
-        {/* service list */}
         <Route path="/services" element={<Service />} />
-
-        {/* dynamic service page */}
         <Route path="/services/:slug" element={<ServiceDetails/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/career" element={<Career/>} />
         <Route path="/events" element={<Event/>} />
-
       </Route>
-
-      {/* 404 */}
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
