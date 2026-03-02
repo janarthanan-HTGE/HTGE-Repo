@@ -3,49 +3,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
-
-/* =====================================================
-   MAIN INIT FUNCTION
-===================================================== */
 export function initGsapHtge() {
-  textInvertScroll();
   splitTextAnimation();
-  textSplitUp();
   heroTextPlayUp();
-  heroButtonPlayUp();
-  drawBorder();
-  imageReveal();      
-  hoverReveal();
+  heroButtonPlayUp();   
   dataBackground();
 }
 
-
-/* =====================================================
-   TEXT INVERT WITH SCROLL
-===================================================== */
-function textInvertScroll() {
-  const elements = document.querySelectorAll(".bw-split-text");
-  if (!elements.length) return;
-
-  const split = new SplitText(elements, { type: "lines" });
-
-  split.lines.forEach((line) => {
-    gsap.to(line, {
-      backgroundPositionX: 0,
-      ease: "none",
-      scrollTrigger: {
-        trigger: line,
-        scrub: 1,
-        start: "top 90%",
-        end: "bottom center",
-      },
-    });
-  });
-}
-
-/* =====================================================
-   SPLIT TEXT ANIMATION
-===================================================== */
 function splitTextAnimation() {
   document.querySelectorAll(".split-text:not(.swiper-slide *)").forEach((el) => {
 
@@ -82,36 +46,6 @@ function splitTextAnimation() {
   });
 }
 
-/* =====================================================
-   TEXT SPLIT UP SCROLL
-===================================================== */
-function textSplitUp() {
-  const elements = gsap.utils.toArray(".text-splite-up");
-  if (!elements.length) return;
-
-  elements.forEach((el) => {
-    const split = new SplitText(el, { type: "words,lines" });
-    gsap.set(el, { perspective: 400 });
-
-    gsap.from(split.lines, {
-      opacity: 0,
-      rotationX: -80,
-      transformOrigin: "top center -50",
-      stagger: 0.1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: el,
-        start: "top 110%",
-        end: "bottom 100%",
-        scrub: 1,
-      },
-    });
-  });
-}
-
-/* =====================================================
-   HERO TEXT PLAY UP BTN
-===================================================== */
 function heroButtonPlayUp() {
   const buttons = document.querySelectorAll(".tp-btn-play-up");
 
@@ -137,9 +71,6 @@ function heroButtonPlayUp() {
   });
 }
 
-/* =====================================================
-   HERO TEXT PLAY UP
-===================================================== */
 function heroTextPlayUp() {
   const playUpElements = document.querySelectorAll(
     ".tp-play-up, .tp-play-up-2"
@@ -191,97 +122,7 @@ function heroTextPlayUp() {
     });
   }
 }
-/* =====================================================
-   DRAW BORDER
-===================================================== */
-function drawBorder() {
-  const borders = document.querySelectorAll(".bw-draw-border");
-  if (!borders.length) return;
 
-  borders.forEach((line) => {
-    gsap.set(line, { width: 0 });
-
-    gsap.to(line, {
-      width: "100%",
-      duration: 3,
-      delay: 0.5,
-      scrollTrigger: {
-        trigger: line,
-        start: "top 90%",
-        end: "bottom 80%",
-        scrub: 1,
-      },
-    });
-  });
-}
-
-/* =====================================================
-   IMAGE REVEAL ANIMATION
-===================================================== */
-function imageReveal() {
-  reveal(".reveal-right", "x", -100, 1.3);
-  reveal(".reveal-left", "x", 100, 1.3);
-  reveal(".reveal-bottom", "y", -100, 1.3);
-}
-
-function reveal(selector, axis, percent, scale) {
-  gsap.utils.toArray(selector).forEach((el) => {
-    const img = el.querySelector("img");
-    if (!img) return;
-
-    gsap.set(el, { overflow: "hidden" });
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: el,
-        start: "top 85%",  
-        toggleActions: "play none none reverse",
-        markers: false,    
-      },
-    });
-
-    tl.from(el, {
-      duration: 1.2,
-      [`${axis}Percent`]: -percent,
-      ease: "power2.out",
-    }).from(
-      img,
-      {
-        duration: 1.2,
-        [`${axis}Percent`]: percent,
-        scale,
-        ease: "power2.out",
-      },
-      "<"
-    );
-  });
-}
-
-
-/* =====================================================
-   HOVER IMAGE FOLLOW
-===================================================== */
-function hoverReveal() {
-  const items = document.querySelectorAll(".bw-hover-image");
-  if (!items.length) return;
-
-  items.forEach((item) => {
-    item.addEventListener("mousemove", (e) => {
-      const rect = item.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-
-      const img = item.children[1];
-      if (!img) return;
-
-      img.style.transform = `translate(${x}px, ${y}px)`;
-    });
-  });
-}
-
-/* =====================================================
-   DATA BACKGROUND
-===================================================== */
 function dataBackground() {
   document
     .querySelectorAll("[data-background]")
@@ -292,27 +133,11 @@ function dataBackground() {
       }
     });
 }
-/* =====================================================
-   CLEANUP / DESTROY (REACT SAFETY)
-===================================================== */
-
-/**
- * Call this when a component unmounts
- * Prevents duplicate animations & memory leaks
- */
 export function destroyGsapHtge() {
   ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
   gsap.globalTimeline.clear();
 }
 
-/* =====================================================
-   OPTIONAL: RE-INIT HELPERS
-===================================================== */
-
-/**
- * Use this if content changes dynamically
- * (route change, conditional rendering, etc.)
- */
 export function refreshGsapHtge() {
   ScrollTrigger.refresh();
 }
