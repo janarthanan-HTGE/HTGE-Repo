@@ -22,7 +22,7 @@ const FooterSec = () => {
                         <div className="widget-head">
                         <Link to="/">
                             <img
-                            src="/assets/img/logo/black-logo.png"
+                            src="/assets/img/logo/black-logo.avif"
                             alt="logo"
                             width="100"
                             />

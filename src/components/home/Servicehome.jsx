@@ -10,21 +10,21 @@ const ServiceHome = () => {
   const services = [
     {
       id: 2,
-      image: "/assets/img/service/01.jpg",
+      image: "/assets/img/service/01.avif",
       icon: FaCode,
       title: "Software Development",
       desc: "Scalable and secure web, mobile, and enterprise software solutions.",
     },
     {
       id: 3,
-      image: "/assets/img/service/02.jpg",
+      image: "/assets/img/service/02.avif",
       icon: MdAutoGraph,
       title: "Digital Marketing",
       desc: "Boost your online presence with SEO, social media, PPC, and digital branding services.",
     },
     {
       id: 4,
-      image: "/assets/img/service/03.jpg",
+      image: "/assets/img/service/03.avif",
       icon: PiCertificateLight,
       title: "Internships & Training",
       desc: "Gain real-world skills through job-oriented IT internships and professional training programs.",
@@ -135,12 +135,12 @@ const ServiceHome = () => {
                   <div className="shape">
                     <img
                       className="shape-3"
-                      src="/assets/img/service/shape-1.png"
+                      src="/assets/img/service/shape-1.avif"
                       alt="curve-right"
                     />
                     <img
                       className="shape-4"
-                      src="/assets/img/service/shape-2.png"
+                      src="/assets/img/service/shape-2.avif"
                       alt="curve-left"
                     />
                   </div>

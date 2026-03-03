@@ -31,7 +31,7 @@ const BreadCrumb = () => {
   return (
     <div
       className="breadcrumb-wrapper bg-cover"
-      style={{ backgroundImage: "url('/assets/img/breadcrumb.jpg')" }}
+      style={{ backgroundImage: "url('/assets/img/breadcrumb.avif')" }}
     >
       <div className="container">
         <div className="page-heading">

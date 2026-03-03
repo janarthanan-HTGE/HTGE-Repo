@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 const testimonials = [
   {
     id: 1,
-    image: "/assets/img/testimonial/01.jpg",
+    image: "/assets/img/testimonial/01.avif",
     name: "Shiva R",
     role: "Intern",
     text:
@@ -15,7 +15,7 @@ const testimonials = [
   },
   {
     id: 2,
-    image: "/assets/img/testimonial/01.jpg",
+    image: "/assets/img/testimonial/01.avif",
     name: "Hair Expo",
     role: "Support",
     text:
@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     id: 3,
-    image: "/assets/img/testimonial/01.jpg",
+    image: "/assets/img/testimonial/01.avif",
     name: "SSK",
     role: "Digital Marketing",
     text:

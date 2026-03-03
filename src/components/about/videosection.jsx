@@ -11,7 +11,7 @@ const AboutVid = () => {
             <div className="container">
                 <div
                 className="video-image bg-cover fade-up" ref={fadeRef}
-                style={{ backgroundImage: "url(assets/img/video-02.jpg)" }}
+                style={{ backgroundImage: "url(assets/img/video-02.avif)" }}
                 >
                 <a
                     href="#"

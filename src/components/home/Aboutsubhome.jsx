@@ -11,7 +11,7 @@ const AboutSubHome = () => {
         <section className="about-wrapper about-2 mx-xl-5 section-padding pt-0">
         <div
             className="bg-image bg-cover "
-            style={{ backgroundImage: "url(assets/img/about/01-bg.png)" }}
+            style={{ backgroundImage: "url(assets/img/about/01-bg.webp)" }}
         ></div>
         <div className="container">
             <div ref={fadeRef} className="about-content fade-up">

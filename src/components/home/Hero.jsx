@@ -35,7 +35,7 @@ const HeroSection = () => {
         className="hero-bg bg-cover"
         style={{
           backgroundImage:
-            "url('/assets/img/hero/hero-1-1-bg.png')",
+            "url('/assets/img/hero/hero-1-1-bg.webp')",
         }}
       />
 
@@ -82,7 +82,7 @@ const HeroSection = () => {
           <div className="col-xl-6 col-lg-6 col-md-12 col-12 fade-up" ref={imageRef}>
             <div className="hero-image mx-lg-0 mx-auto md:-mb-5">
               <img
-                src="/assets/img/hero/hero-1.png"
+                src="/assets/img/hero/hero-1.webp"
                 alt="man"
               />
             </div>

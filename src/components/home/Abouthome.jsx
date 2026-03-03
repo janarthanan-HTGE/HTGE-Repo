@@ -37,14 +37,14 @@ const AboutHome = () => {
               </a>
               <div className="image-1 aspect-[3/4]">
                 <img
-                  src="/assets/img/about/01.jpg"
+                  src="/assets/img/about/01.webp"
                   alt="Clientone"
                   className="w-full h-full object-cover block"
                 />
               </div>
               <div className="image-2 aspect-square">
                 <img
-                  src="/assets/img/about/02.png"
+                  src="/assets/img/about/02.webp"
                   alt="ClientTwo"
                   className="w-full h-full object-contain block"
                 />

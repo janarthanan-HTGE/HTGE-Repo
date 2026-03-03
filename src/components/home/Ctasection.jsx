@@ -8,7 +8,7 @@ const CtaSection = () => {
           <div className="shape">
             <img
               className="shape-1"
-              src="/assets/img/cta/cta-shape-1.png"
+              src="/assets/img/cta/cta-shape-1.webp"
               alt="shape"
             />
             <img
@@ -38,7 +38,7 @@ const CtaSection = () => {
             <div className="col-xl-6 col-lg-6 col-12">
               <div className="images">
                 <img
-                  src="/assets/img/cta/cta-1.png"
+                  src="/assets/img/cta/cta-1.webp"
                   alt="design"
                 />
               </div>

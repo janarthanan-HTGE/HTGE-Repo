@@ -33,7 +33,7 @@ const JobsSection = () => {
   return (
     <section
       className="jobs-section"
-      style={{ backgroundImage: "url(/assets/img/job/bg.png)" }}
+      style={{ backgroundImage: "url(/assets/img/job/bg.avif)" }}
     >
       <div className="jobs-container">
 

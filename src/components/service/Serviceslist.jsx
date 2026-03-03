@@ -68,7 +68,7 @@ const Services = () => {
                     <div
                       className="service-bg bg-cover"
                       style={{
-                        backgroundImage: "url(assets/img/service/08.jpg)"
+                        backgroundImage: "url(assets/img/service/08.avif)"
                       }}
                     />
 

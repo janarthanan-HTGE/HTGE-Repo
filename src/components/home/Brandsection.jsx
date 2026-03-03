@@ -5,15 +5,15 @@ import "swiper/css";
 
 const BrandSection = () => {
   const brandLogos = [
-    "/assets/img/brand/brand-1.jpg",
-    "/assets/img/brand/brand-2.png",
-    "/assets/img/brand/brand-3.jfif",
-    "/assets/img/brand/brand-4.png",
-    "/assets/img/brand/brand-5.jpg",
-    "/assets/img/brand/brand-6.jfif",
-    "/assets/img/brand/brand-7.png",
-    "/assets/img/brand/brand-8.jpg",
-    "/assets/img/brand/brand-9.png",
+    "/assets/img/brand/brand-1.webp",
+    "/assets/img/brand/brand-2.webp",
+    "/assets/img/brand/brand-3.webp",
+    "/assets/img/brand/brand-4.webp",
+    "/assets/img/brand/brand-5.webp",
+    "/assets/img/brand/brand-6.webp",
+    "/assets/img/brand/brand-7.webp",
+    "/assets/img/brand/brand-8.webp",
+    "/assets/img/brand/brand-9.webp",
   ];
 
   return (

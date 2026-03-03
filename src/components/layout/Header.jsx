@@ -68,7 +68,7 @@ const NavBar = () => {
                 <div className="offcanvas__logo">
                   <Link to="/">
                     <img
-                      src="/assets/img/logo/black-logo.png"
+                      src="/assets/img/logo/black-logo.avif"
                       alt="logo-img"
                     />
                   </Link>
@@ -191,7 +191,7 @@ const NavBar = () => {
                   <div className="logo">
                     <Link to="/">
                       <img
-                        src="/assets/img/logo/black-logo.png"
+                        src="/assets/img/logo/black-logo.avif"
                         alt="logo-img"
                       />
                     </Link>

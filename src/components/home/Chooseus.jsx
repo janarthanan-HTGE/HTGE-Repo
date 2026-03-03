@@ -57,9 +57,9 @@ const ChooseUsHome = () => {
               ref={leftRef}
               className="choose-us-images fade-left"
             >
-              <img src="/assets/img/why-choose/01.png" alt="man" />
+              <img src="/assets/img/why-choose/01.avif" alt="man" />
               <div className="shape-img">
-                <img src="/assets/img/shape/shape-2.png" alt="style-circle" />
+                <img src="/assets/img/shape/shape-2.avif" alt="style-circle" />
               </div>
             </div>
           </div>
