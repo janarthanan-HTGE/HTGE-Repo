@@ -2,31 +2,37 @@
   {
     "icon": "FaBullhorn",
     "title": "Digital Marketing",
-    "description": "Increase traffic, leads, and sales with marketing."
+    "description": "Increase traffic, leads, and sales with marketing.",
+    "image":"assets/img/service/services/digital-marketing.jfif"
   },
   {
     "icon": "FaCode",
     "title": "Web Development",
-    "description": "Build responsive, secure, scalable websites for growth."
+    "description": "Build responsive, secure, scalable websites for growth.",
+    "image":"assets/img/service/services/web-development.jfif"
   },
   {
     "icon": "FaLaptopCode",
     "title": "Software Development",
-    "description": "Custom software development services for business growth"
+    "description": "Custom software development services for business growth",
+    "image":"assets/img/service/services/software-development.jfif"
   },
   {
     "icon": "FaMobileAlt",
     "title": "Mobile App Development",
-    "description": "Develop high-performance mobile apps for Android and iOS."
+    "description": "Develop high-performance mobile apps for Android and iOS.",
+    "image":"assets/img/service/services/app-development.jfif"
   },
   {
     "icon": "FaHeadset",
     "title": "IT Support & IT Services",
-    "description": "Reliable IT support, cloud, and maintenance."
+    "description": "Reliable IT support, cloud, and maintenance.",
+    "image":"assets/img/service/services/it-support.jpg"
   },
   {
     "icon" : "FaPaintBrush",
     "title" : "UI/UX Design",
-    "description" : "Create intuitive, engaging user interfaces and experiences."
+    "description" : "Create intuitive, engaging user interfaces and experiences.",
+    "image":"assets/img/service/services/ui-ux.jfif"
   }
 ]

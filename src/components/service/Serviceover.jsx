@@ -15,11 +15,11 @@ const ServiceOverview = () => {
   }
 
   return (
-    <section className="service-details-section fix section-padding">
+    <section className="service-details-section fix section-padding mb-[-60px]">
       <div className="container">
         <div className="service-details-wrapper">
           <div className="row g-5 justify-content-center">
-            <div className="section-title text-center">
+            <div className="section-title text-center mb-0">
               <h2>
                 {service.title}
               </h2>
@@ -29,7 +29,7 @@ const ServiceOverview = () => {
             </div>
             <div className="col-lg-12">
               <div className="service-details-image">
-                <img src={service.image} alt={service.title} />
+                <img src={service.image} alt={service.title}/>
               </div>
             </div>
             <div className="col-lg-10">
